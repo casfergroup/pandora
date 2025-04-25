@@ -2,7 +2,7 @@
 name: Suggest New Tool
 about: Tool Name
 title: ''
-labels: ''
+labels: tool suggestion
 assignees: ''
 
 ---
