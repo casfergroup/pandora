@@ -1,5 +1,5 @@
 list:
-  - topic: Attack / Adversary Simulation (Red teaming)
+  - topic: Red teaming
     tools:
       - name: Atomic Red Team
         link: https://atomicredteam.io/
@@ -90,7 +90,7 @@ list:
         description: Attack-simulator tool for unauthorized access
         type: Open-source
 
-  - topic: Distributions
+  - topic: Linux Distributions
     tools:
       - name: ArchStrike
         link: https://archstrike.org/
@@ -144,6 +144,14 @@ list:
         link: https://github.com/trustedsec/ptf
         description: Distro is organized around Penetration Testing Execution Standard (PTES)
         type: Open-source
+      - name: Tails
+        link: https://tails.net/
+        description: Security-focused Debian-based distro for anonymity and privacy using Tor
+        type: Open-source
+      - name: Trace Labs OSINT VM
+        link: https://www.tracelabs.org/initiatives/osint-vm
+        description: A virtual machine bundled with OSINT tools maintained by Trace Labs
+        type: Free
 
   - topic: Frameworks
     tools:
@@ -215,6 +223,7 @@ list:
         link: https://github.com/rastating/wordpress-exploit-framework
         description: Ruby framework for WordPress pentesting
         type: Open-source
+
   - topic: Static and Dynamic Analyzers
     tools:
       - name: bandit
@@ -225,22 +234,26 @@ list:
         link: https://github.com/presidentbeef/brakeman
         description: Static analysis security vulnerability scanner for Ruby on Rails applications
         type: Open-source
-      - name: cppcheck
-        link: http://cppcheck.sourceforge.net/
-        description: Extensible C/C++ static analyzer and bug finder
-        type: Open-source
       - name: Checkmarx
         link: https://checkmarx.com/
         description: Full suite of SAST, DAST, and code scanning tools built for internal teams
+        type: Commercial
+      - name: Codacy
+        link: https://www.codacy.com/
+        description: AI-driven SAST for 40+ programming languages
         type: Commercial
       - name: Coverity
         link: https://scan.coverity.com/
         description: Free static analysis solution for open-source projects
         type: Free
-      - name: Codacy
-        link: https://www.codacy.com/
-        description: AI-driven SAST for 40+ programming languages
-        type: Commercial
+      - name: cppcheck
+        link: http://cppcheck.sourceforge.net/
+        description: Extensible C/C++ static analyzer and bug finder
+        type: Open-source
+      - name: Docker Scout
+        link: https://www.docker.com/products/scout/
+        description: Container analysis and vulnerability insights tool from Docker
+        type: Free
       - name: FindBugs
         link: http://findbugs.sourceforge.net/
         description: Free Java static analyzer with a focus on bugs
@@ -273,6 +286,10 @@ list:
         link: https://snyk.io/
         description: Vulnerability database and code scanner
         type: Commercial
+      - name: Trivy
+        link: https://github.com/aquasecurity/trivy
+        description: Simple and comprehensive vulnerability scanner for containers and other artifacts
+        type: Open-source
       - name: Veracode
         link: https://www.veracode.com/
         description: Static analysis and vulnerability management
@@ -569,10 +586,6 @@ list:
         link: https://github.com/r00t-3xp10it/morpheus
         description: Automated ettercap TCP/IP hijacking tool
         type: Open-source
-      - name: Nginx
-        link: http://nginx.org/
-        description: Graphical interface with scriptable access to network infrastructure scanning and enumeration tools
-        type: Open-source
       - name: pig
         link: https://github.com/rafael-santiago/pig
         description: Linux packet crafting tool with library of attack signatures
@@ -722,6 +735,10 @@ list:
         link: https://github.com/kgretzky/evilginx2
         description: MITM attack framework used for phishing credentials and session cookies with 2-factor bypass
         type: Open-source
+      - name: Gophish
+        link: https://github.com/gophish/gophish
+        description: Powerful, open-source phishing framework to simulate and manage phishing campaigns
+        type: Open-source
       - name: King Phisher
         link: https://github.com/securestate/king-phisher
         description: Create and manage simultaneous phishing attacks with server and content tools
@@ -740,44 +757,55 @@ list:
       - name: Burp Suite
         link: https://portswigger.net/burp/
         description: An integrated platform for web-application pentesting (Free edition available)
-        type: Proprietary
-        addons:
-          - name: ActiveScan++
-            link: https://portswigger.net/bappstore/3123d5b5f25c4128894d97ea1acc4976
-            description: Active & passive scanning extending basic capabilities
-          - name: BurpSentinel
-            link: https://github.com/dobin/BurpSentinel
-            description: Web application security hole discovery
-          - name: Autorepeater Burp
-            link: https://github.com/nccgroup/AutoRepeater
-            description: Automated HTTP request repeating
-          - name: Autorize
-            link: https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f
-            description: Detect authorization vulnerabilities
-          - name: Flow
-            link: https://portswigger.net/bappstore/ee1c45f4cc084304b2af4b7e92c0a49d
-            description: Logging and history for tools, for troubleshooting
-          - name: Headless Burp
-            link: https://portswigger.net/bappstore/d54b11f7af3c4dfeb6b81fb5db72e381
-            description: Run Burp Suite's Spider and Scanner tools via command-line
-          - name: Logger++
-            link: https://portswigger.net/bappstore/470b7057b86f41c396a97903377f3d81
-            description: A multi-threaded logging extension with filtering
-          - name: WSDL Wizard
-            link: https://portswigger.net/bappstore/ef2f3f1a593d417987bb2ddded760aee
-            description: Scan target servers for WSDL files
-          - name: Retire.js
-            link: https://retirejs.github.io/retire.js/
-            description: Scan for outdated Javascript libraries
-          - name: TurboIntruder
-            link: https://portswigger.net/bappstore/9abaa233088242e8be252cd4ff534988
-            description: Fast and scalable HTTP requests via python scripts
-          - name: ParamMiner
-            link: https://github.com/PortSwigger/param-miner
-            description: Discover hidden web application parameters
-          - name: Co2
-            link: https://portswigger.net/bappstore/c5071c7a7e004f72ae485e8a72911afc
-            description: SQL mapper, scanner, SAML encoder, JWT decoder, hasher
+        type: Commercial
+      - name: ActiveScan++ (Burp Addon)
+        link: https://portswigger.net/bappstore/3123d5b5f25c4128894d97ea1acc4976
+        description: Active & passive scanning extending basic capabilities
+        type: Open-source
+      - name: BurpSentinel (Burp Addon)
+        link: https://github.com/dobin/BurpSentinel
+        description: Web application security hole discovery
+        type: Open-source
+      - name: Autorepeater Burp (Burp Addon)
+        link: https://github.com/nccgroup/AutoRepeater
+        description: Automated HTTP request repeating
+        type: Open-source
+      - name: Autorize (Burp Addon)
+        link: https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f
+        description: Detect authorization vulnerabilities
+        type: Open-source
+      - name: Flow (Burp Addon)
+        link: https://portswigger.net/bappstore/ee1c45f4cc084304b2af4b7e92c0a49d
+        description: Logging and history for tools, for troubleshooting
+        type: Open-source
+      - name: Headless Burp (Burp Addon)
+        link: https://portswigger.net/bappstore/d54b11f7af3c4dfeb6b81fb5db72e381
+        description: Run Burp Suite's Spider and Scanner tools via command-line
+        type: Open-source
+      - name: Logger++ (Burp Addon)
+        link: https://portswigger.net/bappstore/470b7057b86f41c396a97903377f3d81
+        description: A multi-threaded logging extension with filtering
+        type: Open-source
+      - name: WSDL Wizard (Burp Addon)
+        link: https://portswigger.net/bappstore/ef2f3f1a593d417987bb2ddded760aee
+        description: Scan target servers for WSDL files
+        type: Open-source
+      - name: Retire.js (Burp Addon)
+        link: https://retirejs.github.io/retire.js/
+        description: Scan for outdated Javascript libraries
+        type: Open-source
+      - name: TurboIntruder (Burp Addon)
+        link: https://portswigger.net/bappstore/9abaa233088242e8be252cd4ff534988
+        description: Fast and scalable HTTP requests via python scripts
+        type: Open-source
+      - name: ParamMiner (Burp Addon)
+        link: https://github.com/PortSwigger/param-miner
+        description: Discover hidden web application parameters
+        type: Open-source
+      - name: Co2 (Burp Addon)
+        link: https://portswigger.net/bappstore/c5071c7a7e004f72ae485e8a72911afc
+        description: SQL mapper, scanner, SAML encoder, JWT decoder, hasher
+        type: Open-source
       - name: Browser Exploitation Framework (BeEF)
         link: https://github.com/beefproject/beef
         description: Command and control server for delivering exploits
@@ -858,6 +886,7 @@ list:
         link: https://github.com/frohoff/ysoserial
         description: Payload generation tool to exploit unsafe Java serialization
         type: Open-source
+
   - topic: Wireless Network Hacking Tools
     tools:
       - name: Aircrack-ng
@@ -888,8 +917,7 @@ list:
         description: A pentest management and reporting tool (Commercial)
         type: Commercial
       - name: Reconmap
-        link: ""
-        description: A pentest collaboration platform (Commercial)
+        link: ""proration platform (Commercial)
         type: Commercial
       - name: Faraday
         link: https://github.com/infobyte/faraday
@@ -1206,6 +1234,7 @@ list:
         link: https://github.com/melvinsh/vcsmap
         description: Plugin-based tool to scan public version control systems (GitHub) for sensitive information
         type: Open-source
+
   - topic: Transport Layer Security Tools
     tools:
       - name: Httprobe
@@ -1232,6 +1261,7 @@ list:
         link: https://github.com/WestpointLtd/tls_prober
         description: Identify TLS/SSL implementations
         type: Open-source
+
   - topic: DNS Mappers/Subdomain Finders
     tools:
       - name: AltDNS
@@ -1314,6 +1344,7 @@ list:
         link: https://github.com/aboul3la/Sublist3r
         description: Enumerate subdomains using OSINT
         type: Open-source
+
   - topic: Proxies
     tools:
       - name: Fiddler
@@ -1340,16 +1371,22 @@ list:
         link: ""
         description: An intercepting capable proxy
         type: Open-source
-  - topic: Port Scanners
-    tools:
-      - name: Naabu
-        link: https://github.com/projectdiscovery/naabu
-        description: Port scanner for attack surface discovery and enumeration
-        type: Open-source
-      - name: NMap
-        link: https://nmap.org/book/port-scanning-tutorial.html
-        description: Extremely popular port scanner
-        type: Open-source
+
+    - topic: Port Scanners
+      tools:
+        - name: Naabu
+          link: https://github.com/projectdiscovery/naabu
+          description: Port scanner for attack surface discovery and enumeration
+          type: Open-source
+        - name: NMap
+          link: https://nmap.org/book/port-scanning-tutorial.html
+          description: Extremely popular port scanner
+          type: Open-source
+        - name: Zenmap
+          link: https://nmap.org/zenmap/
+          description: Official GUI frontend for NMap with scanning profiles and visualization
+          type: Open-source
+
   - topic: Misc. Tools
     tools:
       - name: NCat
@@ -1380,6 +1417,7 @@ list:
         link: https://github.com/jtesta/ssh-mitm
         description: SSH connection interceptor over proxy with plaintext logs
         type: Open-source
+  
   - topic: Vulnerability Scanners
     tools:
       - name: ACSTIS
@@ -1522,6 +1560,7 @@ list:
         link: https://www.zaproxy.org/
         description: OWASP's web app scanner
         type: Open-source
+
   - topic: Utilities (Windows)
     tools:
       - name: DeathStar

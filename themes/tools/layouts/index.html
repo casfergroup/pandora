@@ -15,7 +15,7 @@
         </div>
         
     </div>
-        {{ range .Site.Data.tools.list}}
+    {{ range sort .Site.Data.tools.list "topic" }}
         <div style="height: 50px;"></div>
         <div class="container">
             <h2 class="mb-4 text-secondary">{{ .topic }}</h2>
