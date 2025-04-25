@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'sora'; /* A name you choose for your font */
+    src: url('/fonts/sora.woff2') format('woff2'); 
+    font-style: normal; 
+    font-display: swap;
+}
+
+* {
+    font-family: 'sora', sans-serif !important; /* Fallback to a generic sans-serif font */
+  }
+
+  body {
+    background-color: black;
+  }

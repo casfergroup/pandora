@@ -1,0 +1,1605 @@
+list:
+  - topic: Attack / Adversary Simulation (Red teaming)
+    tools:
+      - name: Atomic Red Team
+        link: https://atomicredteam.io/
+        description: Library of tests mapped to the MITRE ATT&CK Framework
+        type: Open-source
+      - name: APT Simulator
+        link: https://github.com/NextronSystems/APTSimulator
+        description: Script & toolset to simulate the appearance of an APT attack
+        type: Open-source
+      - name: ATT&CK Simulator
+        link: https://github.com/timfrazier1/AdversarySimulation
+        description: Automate adversary simulations for red/blue-purple teaming
+        type: Open-source
+      - name: BlindSpot
+        link: https://ondefend.com/blindspot/
+        description: Adversary simulator with red-team, breach simulation, and purple team capabilities. 
+        type: Commercial
+      - name: Caldera
+        link: https://caldera.mitre.org/
+        description: A framework for adversary emulation by MITRE
+        type: Open-source
+      - name: Cobalt Strike
+        link: https://www.cobaltstrike.com/
+        description: A VM & threat emulation framework for adversary simulation / red teaming
+        type: Commercial
+      - name: Cymulate
+        link: https://cymulate.com/
+        description: Security posture management platform with red teaming 
+        type: Commercial
+      - name: Dumpsterfire
+        link: https://github.com/TryCatchHCF/DumpsterFire
+        description: Menu-driven tool for building distributed security events for red/blue/purple team drills
+        type: Open-source
+      - name: GreyMatter
+        link: https://www.reliaquest.com/platform/
+        description: Security operations platform with red teaming (formerly Threatcare) 
+        type: Commercial
+      - name: Infection Monkey
+        link: https://www.akamai.com/infectionmonkey
+        description: Open-source breach and attack simulation platform
+        type: Open-source
+      - name: Invoke Adversary
+        link: https://github.com/CyberMonitor/Invoke-Adversary
+        description: Script for automating adversary threats
+        type: Open-source
+      - name: Mandiant
+        link: https://www.mandiant.com/advantage/security-validation
+        description: Security validation and adversary simulation tool in Google Cloud 
+        type: Commercial
+      - name: MATE
+        link: https://learn.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-simulations?view=o365-worldwide
+        description: Attack Simulator offered by Microsoft as part of 365
+        type: Commercial
+      - name: Metta
+        link: https://github.com/uber-common/metta
+        description: Open-source tool for network adversarial simulation
+        type: Open-source
+      - name: NSAUnfetter
+        link: https://nsacyber.github.io/unfetter/
+        description: Attack simulator based on the MITRE ATT&CK framework
+        type: Open-source
+      - name: Pentera
+        link: https://pentera.io/
+        description: Automate insider & outsider attacks for red-team/purple team exercises 
+        type: Commercial
+      - name: Red Team Automation (RTA)
+        link: https://github.com/endgameinc/RTA
+        description: Scripts based on 50+ MITRE ATT&CK tactics for blue teams
+        type: Open-source
+      - name: SafeBreach
+        link: https://www.safebreach.com/
+        description: Breach and attack simulation platform 
+        type: Commercial
+      - name: Scythe.io
+        link: https://scythe.io/
+        description: Cloud adversary emulation platform for red-team/purple team 
+        type: Commercial
+      - name: SimSpace
+        link: https://www.simspace.com/
+        description: Simulated environment for cybersecurity exercises 
+        type: Commercial
+      - name: Splunk Attack Range
+        link: https://github.com/splunk/attack_range
+        description: Cloud and local environment builder for attack simulation
+        type: Open-source
+      - name: THC Hydra
+        link: https://github.com/vanhauser-thc/thc-hydra
+        description: Attack-simulator tool for unauthorized access
+        type: Open-source
+
+  - topic: Distributions
+    tools:
+      - name: ArchStrike
+        link: https://archstrike.org/
+        description: Arch GNU/Linux repository closely following Linux Standards
+        type: Open-source
+      - name: AttifyOS
+        link: https://github.com/adi0x90/attifyos
+        description: GNU/Linux distribution built around IoT pentesting
+        type: Open-source
+      - name: BackBox
+        link: https://backbox.org/
+        description: Ubuntu-based distribution for penetration tests and security assessments
+        type: Free
+      - name: BlackArch
+        link: https://www.blackarch.org/
+        description: Arch GNU/Linux-based distribution with 2,500+ tools
+        type: Open-source
+      - name: CAINE
+        link: https://www.caine-live.net/?ref=itsfoss.com
+        description: Computer Aided Investigative Environment is a digital forensics and analysis framework
+        type: Free
+      - name: Fedora Security Lab
+        link: https://labs.fedoraproject.org/en/security/
+        description: Test environment for security auditing, forensics, system rescue, etc.
+        type: Free
+      - name: Kali
+        link: https://www.kali.org/
+        description: GNU/Linux distro for digital forensics and pentesting
+        type: Free
+      - name: Linux Kodachi
+        link: https://www.digi77.com/linux-kodachi/
+        description: A Debian-based distro, boot from CD/USB, filters traffic through TOR and attempts trace cleanup after use
+        type: Free
+      - name: Network Security Toolkit (NST)
+        link: http://networksecuritytoolkit.org/
+        description: Fedora-based bootable live operating system
+        type: Free
+      - name: ParrotOS
+        link: https://www.parrotsec.org/
+        description: Distro featuring multiple architecture options and 100+ pentest tools
+        type: Open-source
+      - name: Pentoo
+        link: http://www.pentoo.ch/
+        description: Security-focused live USB-based on Gentoo for 32/64-bit OS
+        type: Open-source
+      - name: Samurai Web Testing Framework
+        link: https://sourceforge.net/projects/samurai/?ref=itsfoss.com
+        description: Distro for pentesting on the web
+        type: Free
+      - name: The Pentesters Framework
+        link: https://github.com/trustedsec/ptf
+        description: Distro is organized around Penetration Testing Execution Standard (PTES)
+        type: Open-source
+
+  - topic: Frameworks
+    tools:
+      - name: BetterCAP
+        link: https://www.bettercap.org/
+        description: Modular, portable, and easily extensible MITM framework
+        type: Open-source
+      - name: Caldera
+        link: https://caldera.mitre.org/
+        description: A framework for adversary emulation by MITRE
+        type: Open-source
+      - name: Canvas
+        link: https://www.immunityinc.com/products/canvas/
+        description: An automated exploit system and exploit development framework. Costs $32,480 per year including third-party products
+        type: Commercial
+      - name: Cobalt Strike
+        link: https://www.cobaltstrike.com/
+        description: A Fortra VM & threat emulation framework
+        type: Commercial
+      - name: Dshell
+        link: https://github.com/USArmyResearchLab/Dshell
+        description: Network forensic analysis framework
+        type: Open-source
+      - name: ExploitPack
+        link: https://exploitpack.com/
+        description: Graphical tool with 39,000+ exploits for pentest automation
+        type: Commercial
+      - name: Empire
+        link: https://github.com/BC-SECURITY/Empire
+        description: Post-exploitation adversary emulation framework
+        type: Open-source
+      - name: IronWASP
+        link: https://resources.infosecinstitute.com/ironwasp-part-1-2/
+        description: Framework for web-application vulnerability testing with tools & scanner capabilities
+        type: Open-source
+      - name: Jok3r
+        link: https://hub.docker.com/r/koutto/jok3r/
+        description: A network infrastructure and web security assessment framework with automation & pentest tools
+        type: Open-source
+      - name: Metasploit
+        link: https://www.metasploit.com/
+        description: Post-exploitation pentest tools to verify vulnerabilities, manage assessments, and more. Open Source and Pro available. Pro costs roughly $15,000 per year
+        type: Open-source / Commercial
+      - name: MobSF
+        link: https://github.com/MobSF/Mobile-Security-Framework-MobSF
+        description: Automated mobile app pentesting, malware analysis and security assessment framework with static and dynamic analysis
+        type: Open-source
+      - name: Pupy
+        link: https://github.com/n1nj4sec/pupy
+        description: Cross-platform remote administration and post-exploitation tool in Python & C
+        type: Open-source
+      - name: Recon-ng
+        link: https://github.com/lanmaster53/recon-ng
+        description: A web-based reconnaissance framework
+        type: Open-source
+      - name: ReNgine
+        link: https://rengine.wiki/
+        description: Open-source reconnaissance framework
+        type: Open-source
+      - name: routersploit
+        link: https://github.com/reverse-shell/routersploit
+        description: Open-source exploitation framework for embedded devices
+        type: Open-source
+      - name: shellsploit
+        link: https://github.com/vasco2016/shellsploit-framework
+        description: Exploit development framework
+        type: Open-source
+      - name: WordPress Exploit Framework
+        link: https://github.com/rastating/wordpress-exploit-framework
+        description: Ruby framework for WordPress pentesting
+        type: Open-source
+  - topic: Static and Dynamic Analyzers
+    tools:
+      - name: bandit
+        link: https://pypi.python.org/pypi/bandit/
+        description: Python code analyzer with a focus on vulnerabilities
+        type: Open-source
+      - name: Brakeman
+        link: https://github.com/presidentbeef/brakeman
+        description: Static analysis security vulnerability scanner for Ruby on Rails applications
+        type: Open-source
+      - name: cppcheck
+        link: http://cppcheck.sourceforge.net/
+        description: Extensible C/C++ static analyzer and bug finder
+        type: Open-source
+      - name: Checkmarx
+        link: https://checkmarx.com/
+        description: Full suite of SAST, DAST, and code scanning tools built for internal teams
+        type: Commercial
+      - name: Coverity
+        link: https://scan.coverity.com/
+        description: Free static analysis solution for open-source projects
+        type: Free
+      - name: Codacy
+        link: https://www.codacy.com/
+        description: AI-driven SAST for 40+ programming languages
+        type: Commercial
+      - name: FindBugs
+        link: http://findbugs.sourceforge.net/
+        description: Free Java static analyzer with a focus on bugs
+        type: Open-source
+      - name: Forta WebInspect
+        link: https://www.appsecsanta.com/fortify-webinspect
+        description: Web application vulnerability scanner and analyzer
+        type: Commercial
+      - name: Kiuwan
+        link: https://www.kiuwan.com/
+        description: SAST and code analysis for vulnerability management
+        type: Commercial
+      - name: KlocWork
+        link: https://www.perforce.com/products/klocwork
+        description: Compliance-based SAST
+        type: Commercial
+      - name: PMD
+        link: https://pmd.github.io/
+        description: Source code analyzer for cross-language SaaS
+        type: Open-source
+      - name: sobelow
+        link: https://github.com/nccgroup/sobelow
+        description: Phoenix Framework static analyzer focused on vulnerabilities
+        type: Open-source
+      - name: SonarQube
+        link: https://www.sonarsource.com/products/sonarqube/
+        description: Static code analysis for 30+ languages, frameworks, and platforms
+        type: Commercial
+      - name: Snyk
+        link: https://snyk.io/
+        description: Vulnerability database and code scanner
+        type: Commercial
+      - name: Veracode
+        link: https://www.veracode.com/
+        description: Static analysis and vulnerability management
+        type: Commercial
+
+  - topic: Anonymity Tools
+    tools:
+      - name: I2P
+        link: https://geti2p.net/
+        description: Fully-encrypted private network layer
+        type: Open-source
+      - name: Nipe
+        link: https://github.com/GouveaHeitor/nipe
+        description: Script to make Tor your default gateway
+        type: Open-source
+      - name: OnionScan
+        link: https://onionscan.org/
+        description: Discover vulnerabilities available through Onion-operated services
+        type: Open-source
+      - name: Tor
+        link: https://www.torproject.org/
+        description: Onion-routed overlay network
+        type: Open-source
+      - name: What Every Browser Knows About You
+        link: http://webkay.robinlinus.com/
+        description: Test your own Web browser's configuration
+        type: Free
+
+  - topic: CTF Tools
+    tools:
+      - name: ctf-tools
+        link: https://github.com/zardus/ctf-tools
+        description: Scripts to install various security research tools and deploy to new machines
+        type: Open-source
+      - name: Pwntools
+        link: https://github.com/Gallopsled/pwntools
+        description: Rapid exploit development framework for CTFs
+        type: Open-source
+      - name: RsaCtfTool
+        link: https://github.com/sourcekris/RsaCtfTool
+        description: Attack and decrypt RSA tools
+        type: Open-source
+
+  - topic: DDoS Tools
+    tools:
+      - name: DDOS Ripper
+        link: https://github.com/palahsu/DDoS-Ripper
+        description: DDOS attack server based on compromised computer systems
+        type: Open-source
+      - name: CC-attack
+        link: https://github.com/Leeon123/CC-attack
+        description: Socks4/5 proxy-based multithreading attack
+        type: Open-source
+      - name: HOIC
+        link: https://sourceforge.net/projects/high-orbit-ion-cannon/
+        description: LOIC with countermeasure workarounds
+        type: Open-source
+      - name: JS LOIC
+        link: http://metacortexsecurity.com/tools/anon/LOIC/LOICv1.html
+        description: JavaScript in-browser version of LOIC
+        type: Free
+      - name: LOIC
+        link: https://github.com/NewEraCracker/LOIC/
+        description: Open source network stress tool written in C#
+        type: Open-source
+      - name: MHDDoS
+        link: https://github.com/MatrixTM/MHDDoS
+        description: Python3 DDoS attack script with 56 methods
+        type: Open-source
+      - name: Nightmare Stresser
+        link: https://github.com/NightmareStresser
+        description: DDoS API for stress testing with up to 150 concurrent floods
+        type: Open-source
+      - name: Raven-Storm
+        link: https://github.com/Tmpertor/Raven-Storm
+        description: DDoS Toolkit with multiple attack protocols
+        type: Open-source
+      - name: SlowLoris
+        link: https://github.com/gkbrk/slowloris
+        description: Low bandwidth DDoS tool in Python
+        type: Open-source
+      - name: T50
+        link: https://sourceforge.net/projects/t50/
+        description: Network stress tool
+        type: Open-source
+      - name: UFONet
+        link: https://github.com/epsylon/ufonet
+        description: Denial of service toolkit with multifunctionality
+        type: Open-source
+
+  - topic: Defense Evasion Tools
+    tools:
+      - name: AntiVirus Evasion Tool (AVET)
+        link: https://github.com/govolution/avet
+        description: Antivirus evasion tools
+        type: Open-source
+      - name: Fireprox
+        link: https://github.com/ustayready/fireprox
+        description: AWS API Gateway management tool for IP rotation
+        type: Open-source
+      - name: Hyperion
+        link: http://nullsecurity.net/tools/binary.html
+        description: Runtime encryptor for 32-bit portable executables ("PE .exes")
+        type: Free
+      - name: peCloak.py
+        link: https://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion/
+        description: Hides malicious Windows executable from antivirus
+        type: Free
+      - name: peCloakCapstone
+        link: https://github.com/v-p-b/peCloakCapstone
+        description: Multi-platform fork of peCloak.py
+        type: Open-source
+      - name: Proxybroker2
+        link: https://github.com/bluet/proxybroker2
+        description: Auto-rotate IP via proxy
+        type: Open-source
+      - name: UniByAv
+        link: https://github.com/Mr-Un1k0d3r/UniByAv
+        description: Generates antivirus friendly executables from raw shellcode
+        type: Open-source
+      - name: Veil
+        link: https://www.veil-framework.com/
+        description: Generate payloads to bypass common anti-virus solutions
+        type: Open-source
+
+  - topic: Hash & Cracking Hacking Tools
+    tools:
+      - name: AirCrack
+        link: https://www.aircrack-ng.org/
+        description: Wifi password retrieval with FMS
+        type: Open-source
+      - name: Brutus Password Cracker
+        link: https://www.darknet.org.uk/2006/09/brutus-password-cracker-download-brutus-aet2zip-aet2/
+        description: Complex password retrieval with brute force, dictionary, & more
+        type: Free
+      - name: BruteForce Wallet
+        link: https://github.com/glv2/bruteforce-wallet
+        description: Wallet password search
+        type: Open-source
+      - name: Cain and Abel
+        link: https://www.darknet.org.uk/2007/01/cain-and-abel-download-windows-password-cracker/
+        description: Sniffer and password cracking for forensics
+        type: Free
+      - name: CrackStation
+        link: https://crackstation.net/
+        description: Browser-based password hash-cracking
+        type: Free
+      - name: CeWL
+        link: https://digi.ninja/projects/cewl.php
+        description: Custom wordlists for spidering to feed password crackers
+        type: Open-source
+      - name: Hashcat
+        link: http://hashcat.net/hashcat/
+        description: Hash cracking tool
+        type: Open-source
+      - name: John the Ripper
+        link: http://www.openwall.com/john/
+        description: Password cracker
+        type: Open-source
+      - name: JWT Cracker
+        link: https://github.com/lmammino/jwt-cracker
+        description: HS256 JWT token brute force cracker
+        type: Open-source
+      - name: Medusa
+        link: http://foofus.net/goons/jmk/medusa/medusa.html
+        description: Brute-force parallel testing password cracker
+        type: Open-source
+      - name: Rainbow Crack
+        link: http://project-rainbowcrack.com/
+        description: Hash cracker using large-scale time-memory technique
+        type: Free
+      - name: Rainbow Tables
+        link: http://project-rainbowcrack.com/table.htm
+        description: Rainbow table generator with verification
+        type: Free
+
+  - topic: Hex Editors
+    tools:
+      - name: Frhed
+        link: http://frhed.sourceforge.net/
+        description: Binary file editor for Windows with partial file loading capabilities
+        type: Open-source
+      - name: FS Hex Editor
+        link: https://www.funduc.com/fshexedit.htm
+        description: Hexadecimal and ASCII file editor
+        type: Open-source
+      - name: Hackman
+        link: http://e.informer.com/technologismiki.com/
+        description: Hex and binary editor with RAM viewer
+        type: Open-source
+      - name: HexEdit.js
+        link: https://hexed.it/
+        description: Browser-based hex editing
+        type: Open-source
+      - name: Hexinator
+        link: https://hexinator.com/
+        description: Hex tool with free and premium versions
+        type: Commercial
+      - name: Hexplorer
+        link: https://sourceforge.net/projects/hexplorer/
+        description: Hex editor with data mining tools
+        type: Open-source
+      - name: HxD Hex Editor
+        link: https://mh-nexus.de/en/hxd/
+        description: View, edit, and save hex and source code files
+        type: Open-source
+      - name: Kaitai Struct
+        link: http://kaitai.io/
+        description: Generate parsers and protocols
+        type: Open-source
+      - name: MiTeX Hexadecimal
+        link: https://www.mitec.cz/hex.html
+        description: Hex and Octal file editor with calculator
+        type: Commercial
+      - name: Open Freely
+        link: https://open-freely.en.softonic.com/
+        description: Hex viewer and editor
+        type: Freeware
+      - name: Tiny Hexer
+        link: https://www.softpedia.com/get/Others/Miscellaneous/tiny-hexer.shtml
+        description: Hex viewer, binary searcher, and octal viewer
+        type: Open-source
+      - name: Tyrannosaurus Hex
+        link: http://www.softsea.com/review/Tyrannosaurus-Hex.html
+        description: Open-source hex editor with color coding
+        type: Open-source
+      - name: UltraEdit
+        link: https://www.ultraedit.com/
+        description: Text, code, and hex editor
+        type: Commercial
+      - name: Veles
+        link: https://codisec.com/veles/
+        description: Binary data visualization and analysis tool
+        type: Open-source
+
+  - topic: IoT
+    tools:
+      - name: Praeda
+        link: https://github.com/percx/Praeda
+        description: Data harvester for multi-function printer assessments
+        type: Open-source
+      - name: Printer Exploitation Toolkit (PRET)
+        link: https://github.com/RUB-NDS/PRET
+        description: USB or network program for printer security mapping & exploitation
+        type: Open-source
+      - name: routersploit
+        link: https://github.com/reverse-shell/routersploit
+        description: Open-source exploitation framework for embedded devices
+        type: Open-source
+
+  - topic: Network Tools
+    tools:
+      - name: BetterCAP
+        link: https://www.bettercap.org/
+        description: Modular, portable man-in-the-middle framework
+        type: Open-source
+      - name: CrackMapExec
+        link: https://github.com/byt3bl33d3r/CrackMapExec
+        description: Suite of tools for network penetration
+        type: Open-source
+      - name: Ettercap
+        link: http://www.ettercap-project.org/
+        description: Comprehensive suite for machine-in-the-middle attacks
+        type: Open-source
+      - name: evilgrade
+        link: https://github.com/infobyte/evilgrade
+        description: Fake update injection
+        type: Open-source
+      - name: Dripcap
+        link: https://github.com/orinocoz/dripcap
+        description: Caffeinated packet analyzer for multiple OS
+        type: Open-source
+      - name: dnschef
+        link: https://github.com/iphelix/dnschef
+        description: Highly configurable DNS proxy
+        type: Open-source
+      - name: dnsenum
+        link: https://github.com/fwaeytens/dnsenum/
+        description: Perl script with DNS enumeration, zone transfer, dictionary attack, and reverse lookup functionality
+        type: Open-source
+      - name: dsniff
+        link: https://www.monkey.org/~dugsong/dsniff/
+        description: Recon & infiltration tools for networks
+        type: Open-source
+      - name: impacket
+        link: https://github.com/CoreSecurity/impacket
+        description: Network protocol toolset focused on low-impact access
+        type: Open-source
+      - name: Intercepter-NG
+        link: http://sniff.su/
+        description: Multifunctional network toolkit for recon & interception
+        type: Open-source
+      - name: Morpheus
+        link: https://github.com/r00t-3xp10it/morpheus
+        description: Automated ettercap TCP/IP hijacking tool
+        type: Open-source
+      - name: Nginx
+        link: http://nginx.org/
+        description: Graphical interface with scriptable access to network infrastructure scanning and enumeration tools
+        type: Open-source
+      - name: pig
+        link: https://github.com/rafael-santiago/pig
+        description: Linux packet crafting tool with library of attack signatures
+        type: Open-source
+      - name: pwnat
+        link: https://github.com/samyk/pwnat
+        description: Punches holes in firewalls/NATs without port or DMZ setup required
+        type: Open-source
+      - name: scapy
+        link: https://github.com/secdev/scapy
+        description: Python-based interactive packet manipulation program & library
+        type: Open-source
+      - name: Scap-workbench
+        link: https://www.open-scap.org/tools/scap-workbench/
+        description: A GUI tool with SCAP Scanner and tailoring functionality
+        type: Open-source
+      - name: tcpdump/libpcap
+        link: http://www.tcpdump.org/
+        description: Command-line packet analyzer tool
+        type: Open-source
+      - name: Wireshark
+        link: https://www.wireshark.org/
+        description: A graphic interface surrounding tcpdump / network protocol analyzer
+        type: Open-source
+      - name: Yersina
+        link: https://github.com/tomac/yersinia
+        description: A network tool for 2-layer attacks
+        type: Open-source
+      - name: Zarp
+        link: https://github.com/hatRiot/zarp
+        description: Network attack tool for the exploitation of protocols and stacks
+        type: Open-source
+
+  - topic: Mobile Exploitation
+    tools:
+      - name: Dex2Jar
+        link: https://github.com/pxb1988/dex2jar
+        description: Tool for Android ". dex" and Java ". class" files
+        type: Open-source
+      - name: Drozer
+        link: https://labs.withsecure.com/tools/drozer
+        description: A mobile app security testing framework
+        type: Open-source
+      - name: Frida "Universal" SSL Unpinner
+        link: https://gist.github.com/teknogeek/4dc35fb3801bd7f13e5f0da5b784c725
+        description: Universal unpinner
+        type: Open-source
+      - name: Frida
+        link: https://frida.re/
+        description: Dynamic instrumentation toolkit
+        type: Open-source
+      - name: Genymotion
+        link: https://www.genymotion.com/
+        description: Cross-platform Android emulator for developers & QA engineers
+        type: Commercial
+      - name: Jadx
+        link: https://github.com/skylot/jadx
+        description: Command line and GUI tool for producing java source code from Android Dex and APK files
+        type: Open-source
+      - name: MobSF
+        link: https://github.com/MobSF/Mobile-Security-Framework-MobSF
+        description: A mobile application pentesting, malware analysis and security assessment framework with static and dynamic analysis
+        type: Open-source
+      - name: Radare2
+        link: https://rada.re/n/
+        description: Toolchain for forensics, software reverse engineering, exploiting, debugging, etc.
+        type: Open-source
+
+  - topic: Reverse Engineering Tools
+    tools:
+      - name: binwalk
+        link: https://github.com/devttys0/binwalk
+        description: Analyze, reverse engineer, and extract firmware images
+        type: Open-source
+      - name: Capstone
+        link: http://www.capstone-engine.org/
+        description: Lightweight multi-platform, multi-architecture disassembly framework
+        type: Open-source
+      - name: dnSpy
+        link: https://github.com/0xd4d/dnSpy
+        description: .Net debugger and assembly tool
+        type: Open-source
+      - name: Evan's Debugger
+        link: http://www.codef00.com/projects#debugger
+        description: Debugger for GNU/Linux
+        type: Open-source
+      - name: Frida
+        link: https://www.frida.re/
+        description: A scriptable and portable dynamic reverse engineering toolkit
+        type: Open-source
+      - name: Immunity Debugger
+        link: http://debugger.immunityinc.com/
+        description: Debugger with exploit and malware capabilities
+        type: Commercial
+      - name: Interactive Disassembler (IDA Pro)
+        link: https://www.hex-rays.com/products/ida/
+        description: A multi-processor disassembler and debugger with free/premium versions
+        type: Commercial
+      - name: Medusa
+        link: https://github.com/wisk/medusa
+        description: Open source, cross-platform interactive disassembler
+        type: Open-source
+      - name: peda
+        link: https://github.com/longld/peda
+        description: Python Exploit Development Assistance for GDB
+        type: Open-source
+      - name: plasma
+        link: https://github.com/joelpx/plasma
+        description: Interactive disassembler for x86/ARM/MIPS
+        type: Open-source
+      - name: PyREBox
+        link: https://github.com/Cisco-Talos/pyrebox
+        description: Python scriptable Reverse Engineering sandbox and framework
+        type: Open-source
+      - name: Radare2
+        link: https://www.radare.org/r/index.html
+        description: Open source, cross-platform reverse engineering framework
+        type: Open-source
+      - name: rVMI
+        link: https://github.com/fireeye/rVMI
+        description: Full system analysis via virtual machine introspection
+        type: Open-source
+      - name: Voltron
+        link: https://github.com/snare/voltron
+        description: Debugger UK for hackers
+        type: Open-source
+      - name: WDK/WinDbg
+        link: https://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx
+        description: Microsoft Windows Driver Kit and WinDbg
+        type: Commercial
+      - name: x64dbg
+        link: http://x64dbg.com/
+        description: Open source x64/x32 debugger
+        type: Open-source
+
+  - topic: Social Engineering Tools
+    tools:
+      - name: Beelogger
+        link: https://github.com/4w4k3/BeeLogger
+        description: Tool for generating keyloggers for Windows
+        type: Open-source
+      - name: Catphish
+        link: https://github.com/ring0lab/catphish
+        description: Ruby fishing toolkit
+        type: Open-source
+      - name: Evilginx2
+        link: https://github.com/kgretzky/evilginx2
+        description: MITM attack framework used for phishing credentials and session cookies with 2-factor bypass
+        type: Open-source
+      - name: King Phisher
+        link: https://github.com/securestate/king-phisher
+        description: Create and manage simultaneous phishing attacks with server and content tools
+        type: Open-source
+      - name: Social Engineer Toolkit (SET)
+        link: https://github.com/trustedsec/social-engineer-toolkit
+        description: Social engineering toolkit with framework
+        type: Open-source
+      - name: wifiphisher
+        link: https://github.com/sophron/wifiphisher
+        description: Automated phishing attacks against WiFi network for red teaming or WiFi investigations
+        type: Open-source
+
+  - topic: Web Testing
+    tools:
+      - name: Burp Suite
+        link: https://portswigger.net/burp/
+        description: An integrated platform for web-application pentesting (Free edition available)
+        type: Proprietary
+        addons:
+          - name: ActiveScan++
+            link: https://portswigger.net/bappstore/3123d5b5f25c4128894d97ea1acc4976
+            description: Active & passive scanning extending basic capabilities
+          - name: BurpSentinel
+            link: https://github.com/dobin/BurpSentinel
+            description: Web application security hole discovery
+          - name: Autorepeater Burp
+            link: https://github.com/nccgroup/AutoRepeater
+            description: Automated HTTP request repeating
+          - name: Autorize
+            link: https://portswigger.net/bappstore/f9bbac8c4acf4aefa4d7dc92a991af2f
+            description: Detect authorization vulnerabilities
+          - name: Flow
+            link: https://portswigger.net/bappstore/ee1c45f4cc084304b2af4b7e92c0a49d
+            description: Logging and history for tools, for troubleshooting
+          - name: Headless Burp
+            link: https://portswigger.net/bappstore/d54b11f7af3c4dfeb6b81fb5db72e381
+            description: Run Burp Suite's Spider and Scanner tools via command-line
+          - name: Logger++
+            link: https://portswigger.net/bappstore/470b7057b86f41c396a97903377f3d81
+            description: A multi-threaded logging extension with filtering
+          - name: WSDL Wizard
+            link: https://portswigger.net/bappstore/ef2f3f1a593d417987bb2ddded760aee
+            description: Scan target servers for WSDL files
+          - name: Retire.js
+            link: https://retirejs.github.io/retire.js/
+            description: Scan for outdated Javascript libraries
+          - name: TurboIntruder
+            link: https://portswigger.net/bappstore/9abaa233088242e8be252cd4ff534988
+            description: Fast and scalable HTTP requests via python scripts
+          - name: ParamMiner
+            link: https://github.com/PortSwigger/param-miner
+            description: Discover hidden web application parameters
+          - name: Co2
+            link: https://portswigger.net/bappstore/c5071c7a7e004f72ae485e8a72911afc
+            description: SQL mapper, scanner, SAML encoder, JWT decoder, hasher
+      - name: Browser Exploitation Framework (BeEF)
+        link: https://github.com/beefproject/beef
+        description: Command and control server for delivering exploits
+        type: Open-source
+      - name: DirBuster
+        link: https://www.kali.org/tools/dirbuster/#:~:text=DirBuster%20is%20a%20multi%20threaded,names%20on%20web%2Fapplication%20servers.
+        description: Brute-force over directories and web application server tool with hidden directory search
+        type: Open-source
+      - name: Commix
+        link: https://github.com/commixproject/commix
+        description: Command-line injection & exploitation tool
+        type: Open-source
+      - name: fimap
+        link: https://github.com/kurobeats/fimap
+        description: Python tool to find, prepare, audit, & exploit LFI/RFI bugs.
+        type: Open-source
+      - name: Kadimus
+        link: https://github.com/P0cL4bs/Kadimus
+        description: LFI scan and exploit tool.
+        type: Open-source
+      - name: Lazys3
+        link: https://github.com/nahamsec/lazys3
+        description: Ruby script to brute-force for AWS s3 buckets
+        type: Open-source
+      - name: liffy
+        link: https://github.com/hvqzao/liffy
+        description: LFI exploitation tool
+        type: Open-source
+      - name: LFI Suite
+        link: https://github.com/D35m0nd142/LFISuite
+        description: LFI exploiter and scanner
+        type: Open-source
+      - name: NoSQLMap
+        link: https://github.com/codingo/NoSQLMap
+        description: Audit for and automate injection attacks, exploit configuration weaknesses, and clone data
+        type: Open-source
+      - name: OWASP Zed Attack Proxy (ZAP)
+        link: https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project
+        description: Scriptable HTTP intercepting proxy and fuzzer for web applications
+        type: Open-source
+      - name: Payloads All The Things
+        link: https://github.com/swisskyrepo/PayloadsAllTheThings
+        description: Payloads and bypasses for Web Application Security.
+        type: Open-source
+      - name: sslstrip2
+        link: https://github.com/LeonardoNve/sslstrip2
+        description: SSL stripping tool
+        type: Open-source
+      - name: SSRFTest
+        link: https://github.com/daeken/SSRFTest
+        description: Server Site Request Forgery tool
+        type: Open-source
+      - name: SQLNinja
+        link: https://sqlninja.sourceforge.net/
+        description: An SQL server injection and takeover tool
+        type: Open-source
+      - name: SQLMap
+        link: https://github.com/sqlmapproject/sqlmap
+        description: SQL injection detection, exploitation, and takeover tool
+        type: Open-source
+      - name: Subjack
+        link: https://github.com/haccer/subjack
+        description: Subdomain identification and takeover tool written in Go
+        type: Open-source
+      - name: tplmap
+        link: https://github.com/epinna/tplmap
+        description: Server-side template injection, detection, and takeover tool
+        type: Open-source
+      - name: weevely3
+        link: https://github.com/epinna/weevely3
+        description: Weaponized web shell for post exploitation
+        type: Open-source
+      - name: WPSploit
+        link: https://github.com/espreto/wpsploit
+        description: Exploit WordPress websites with Metasploit
+        type: Open-source
+      - name: YsoSerial
+        link: https://github.com/frohoff/ysoserial
+        description: Payload generation tool to exploit unsafe Java serialization
+        type: Open-source
+  - topic: Wireless Network Hacking Tools
+    tools:
+      - name: Aircrack-ng
+        link: http://www.aircrack-ng.org/
+        description: Testing & auditing tools for wireless networks
+        type: Open-source
+      - name: Fluxion
+        link: https://github.com/FluxionNetwork/fluxion
+        description: Suite of automated social engineering-based WPA attacks and analysis
+        type: Open-source
+      - name: Kismet
+        link: https://kismetwireless.net/
+        description: Wireless network detector, sniffer, and WIDS
+        type: Open-source
+      - name: Reaver
+        link: https://code.google.com/archive/p/reaver-wps
+        description: Brute force attack against WiFi Protected Setup.
+        type: Open-source
+      - name: Wifite2
+        link: https://github.com/derv82/wifite2
+        description: Python script to audit wireless networks
+        type: Open-source
+
+  - topic: Pentest Management Platforms
+    tools:
+      - name: AttackForge
+        link: ""
+        description: A pentest management and reporting tool (Commercial)
+        type: Commercial
+      - name: Reconmap
+        link: ""
+        description: A pentest collaboration platform (Commercial)
+        type: Commercial
+      - name: Faraday
+        link: https://github.com/infobyte/faraday
+        description: Multiuser integrated pentesting environment for red teams performing cooperative penetration tests, security audits, and risk assessments. (Commercial)
+        type: Commercial
+
+  - topic: Pentest Report Generation Tools
+    tools:
+      - name: Dradis
+        link: https://dradisframework.com/ce/download.html
+        description: Ruby-based open-source report generation tool (Free)
+        type: Free
+      - name: PwnDoc
+        link: https://github.com/pwndoc/pwndoc
+        description: Pentest report generation tool
+        type: Open-source
+      - name: Serpico
+        link: https://github.com/SerpicoProject/Serpico
+        description: Pentest report automation tool
+        type: Open-source
+      - name: MagicTree
+        link: https://www.gremwell.com/what_is_magictree
+        description: Pentest report generation and streamlining tool with Nmap integration (Commercial)
+        type: Commercial
+      - name: Metagoofil
+        link: https://www.kali.org/tools/metagoofil/
+        description: Autofills metadata into reports
+        type: Open-source
+      - name: PeTeReport
+        link: https://1modm.github.io/petereport/
+        description: Python and Django tool to write markdown reports
+        type: Open-source
+
+  - topic: Recon & Enumeration Tools
+    tools:
+      - name: Asnlookup
+        link: https://www.ultratools.com/tools/asnInfo
+        description: ASN Information tool
+        type: Open-source
+      - name: BlindElephant
+        link: http://blindelephant.sourceforge.net/
+        description: Web application identifier and fingerprinter.
+        type: Open-source
+      - name: Chaos
+        link: https://chaos.projectdiscovery.io/
+        description: Internet-wide asset data for research and recon
+        type: Open-source
+      - name: cms-explorer
+        link: https://code.google.com/archive/p/cms-explorer/
+        description: Reveal the specific modules, plugins, components, and themes run by CMS websites + associated vulnerabilities
+        type: Open-source
+      - name: DET
+        link: https://github.com/sensepost/DET
+        description: Data exfiltration tool for DLP configuration errors
+        type: Open-source
+      - name: EyeWitness
+        link: https://github.com/ChrisTruncer/EyeWitness
+        description: Screenshot, server header, and default credentials tool
+        type: Open-source
+      - name: FuzzDB
+        link: https://github.com/fuzzdb-project/fuzzdb
+        description: Dictionary of attack patterns and primitives for black-box application fault injection and resource discovery
+        type: Open-source
+      - name: Recon_profile
+        link: https://github.com/nahamsec/recon_profile
+        description: Alias creation tool
+        type: Open-source
+      - name: Skipfish
+        link: https://code.google.com/archive/p/skipfish/
+        description: An active web-application security reconnaissance tool
+        type: Open-source
+      - name: smbmap
+        link: https://github.com/ShawnDEvans/smbmap
+        description: SMB enumeration tool
+        type: Open-source
+      - name: Teh_s3_bucketeers
+        link: https://github.com/tomdev/teh_s3_bucketeers
+        description: Discover S3 buckets on Amazon's AWS platform.
+        type: Open-source
+      - name: Transformations
+        link: https://transformations.jobertabma.nl/
+        description: Browser-based data obscurity detection tool
+        type: Open-source
+      - name: Spiderfoot
+        link: https://github.com/smicallef/spiderfoot
+        description: Automated OSINT and data collection
+        type: Open-source
+      - name: Retire.JS
+        link: https://addons.mozilla.org/en-US/firefox/addon/retire-js/
+        description: Browser plugin for finding vulnerable js libraries
+        type: Open-source
+      - name: Virtual-host-discovery
+        link: https://github.com/jobertabma/virtual-host-discovery
+        description: Enumerate virtual hosts on an IP / HTTP scanner
+        type: Open-source
+      - name: VHostScan
+        link: https://github.com/codingo/VHostScan
+        description: Virtual host scanner that performs reverse lookups
+        type: Open-source
+      - name: Wappalyzer
+        link: https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
+        description: A browser extension to identify technologies used on websites
+        type: Open-source
+      - name: wafw00f
+        link: https://github.com/EnableSecurity/wafw00f
+        description: Identifies and fingerprints Web Application Firewall (WAF)
+        type: Open-source
+      - name: webscreenshot
+        link: https://github.com/maaaaz/webscreenshot
+        description: Screenshot script
+        type: Open-source
+      - name: WhatWeb
+        link: https://github.com/urbanadventurer/WhatWeb
+        description: Web scanner and fingerprinter
+        type: Open-source
+      - name: XSS hunter
+        link: https://xsshunter.com/
+        description: Cross-site scripting vulnerability detection and probing
+        type: Open-source
+      - name: zmap
+        link: https://zmap.io/
+        description: Open source network scanner with 13+ tools for further research & scans
+        type: Open-source
+
+  - topic: URL / Subdomain Finders
+    tools:
+      - name: Dirsearch
+        link: https://github.com/maurosoria/dirsearch
+        description: Command line tool to brute force directories and files
+        type: Open-source
+      - name: Dnsgen
+        link: https://github.com/ProjectAnte/dnsgen
+        description: This tool generates a combination of domain names from the provided input
+        type: Open-source
+      - name: Gau
+        link: https://github.com/lc/gau
+        description: Getallurls (gau) fetches known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl
+        type: Open-source
+      - name: JSParser
+        link: https://github.com/nahamsec/JSParser
+        description: A python script to parse relative URLs from JavaScript files
+        type: Open-source
+      - name: Subfinder
+        link: https://github.com/projectdiscovery/subfinder
+        description: A subdomain discovery tool that discovers valid subdomains for websites by using passive online sources
+        type: Open-source
+      - name: Unfurl
+        link: https://github.com/JLospinoso/unfurl
+        description: Analyze URLs and estimate entropies to find URLs that might be vulnerable to attack
+        type: Open-source
+      - name: Waybackurls
+        link: https://github.com/tomnomnom/waybackurls
+        description: Accept line-delimited domains on stdin, fetch known URLs from the Wayback Machine for \*.domain and output them on stdout
+        type: Open-source
+  - topic: OSINT Tools
+    tools:
+      - name: AQUATONE
+        link: https://github.com/michenriksen/aquatone
+        description: Create attack surface maps of subdomains with pre-compiled binaries
+        type: Open-source
+      - name: Censys
+        link: https://www.censys.io/
+        description: Threat intelligence and mapping platform
+        type: Commercial
+      - name: creepy
+        link: https://github.com/ilektrojohn/creepy
+        description: Geolocation gathering via social media platforms
+        type: Open-source
+      - name: C99.nl
+        link: https://api.c99.nl/
+        description: Subdomain scanning tool
+        type: Commercial
+      - name: DataSploit
+        link: https://github.com/upgoingstar/datasploit
+        description: OSINT framework based around corporate espionage
+        type: Open-source
+      - name: Etherape
+        link: https://etherape.sourceforge.io/
+        description: A graphical network monitor for Unix with graphic network activity display
+        type: Open-source
+      - name: Google Hacking Database
+        link: https://www.exploit-db.com/google-hacking-database/
+        description: Google dorks database
+        type: Open-source
+      - name: Maltego
+        link: https://www.maltego.com/
+        description: Open-source intelligence and graphical link analysis tool for gathering and connecting information for intelligence and forensics. (€ 999 per year)
+        type: Commercial
+      - name: metagoofil
+        link: https://github.com/laramies/metagoofil
+        description: Metadata harvester with email extraction functions
+        type: Open-source
+      - name: Seclists
+        link: https://github.com/danielmiessler/SecLists
+        description: Security testing data repository
+        type: Open-source
+      - name: Shodan
+        link: https://www.shodan.io/
+        description: Search for Internet-connected devices
+        type: Commercial
+      - name: theHarvester
+        link: https://github.com/laramies/theHarvester
+        description: Harvest E-mail, subdomain and names via OSINT
+        type: Open-source
+      - name: Debookee
+        link: http://www.iwaxx.com/debookee/
+        description: Network traffic interception and analysis for Mac
+        type: Commercial
+      - name: NetCat
+        link: ""
+        description: A networking tool for reading and writing data across networks
+        type: Open-source
+      - name: Nipper
+        link: https://www.titania.com/products/nipper/
+        description: Network configuration & audit tool for internal teams
+        type: Commercial
+      - name: XRay
+        link: https://github.com/evilsocket/xray
+        description: Recon, mapping, OSINT for public networks
+        type: Open-source
+      - name: ZoomEye
+        link: https://www.zoomeye.org/
+        description: Network component search engine
+        type: Commercial
+  - topic: Dorks
+    tools:
+      - name: BinGoo
+        link: https://github.com/Hood3dRob1n/BinGoo
+        description: GNU/Linux bash-based Bing and Google Dorking Tool
+        type: Open-source
+      - name: dork-bot
+        link: https://github.com/utiso/dorkbot
+        description: Command line Google dork tool
+        type: Open-source
+      - name: fast-recon
+        link: https://github.com/DanMcInerney/fast-recon
+        description: Script to perform Google dorks against a domain
+        type: Open-source
+      - name: GooDork
+        link: https://github.com/k3170makan/GooDork
+        description: Command line Google dorking tool
+        type: Open-source
+      - name: snitch
+        link: https://github.com/Smaash/snitch
+        description: Scripts to use dorks to gather information
+        type: Open-source
+  - topic: Fuzzers
+    tools:
+      - name: Dirb
+        link: https://github.com/v0re/dirb
+        description: Web content scanner and fuzzer
+        type: Open-source
+      - name: Ffuf
+        link: https://github.com/ffuf/ffuf
+        description: Web fuzzer
+        type: Open-source
+      - name: Netzob
+        link: https://github.com/netzob/netzob
+        description: Reverse engineer, model, and fuzz networks
+        type: Open-source
+      - name: Wfuzz
+        link: https://github.com/xmendez/wfuzz
+        description: Web application fuzzer
+        type: Open-source
+  - topic: Mapping & Asset Discovery
+    tools:
+      - name: Amass
+        link: https://github.com/OWASP/Amass
+        description: Attack-surface mapping and external asset discovery
+        type: Open-source
+      - name: Lazyrecon
+        link: https://github.com/nahamsec/lazyrecon
+        description: Script for recon and forensics for identifying first targets in a pentest
+        type: Open-source
+      - name: Sn1per
+        link: https://github.com/1N3/Sn1per
+        description: Automated scanner to enumerate and scan for vulnerabilities, best as recon tool and attack surface management. Community and Pro versions available.
+        type: Open-source
+      - name: Tripwire IP360
+        link: https://www.tripwire.com/products/tripwire-ip360
+        description: Full network and asset discovery vulnerability scanner (Not Free)
+        type: Commercial
+      - name: Altair
+        link: https://altair.sirmuel.design/
+        description: GraphQL query and implementation debugging
+        type: Open-source
+  - topic: Github Grabbers/Rippers
+    tools:
+      - name: DVCS Ripper
+        link: https://github.com/kost/dvcs-ripper
+        description: Version control system ripper for web-accessible systems
+        type: Open-source
+      - name: gitGraber
+        link: https://github.com/hisxo/gitGraber
+        description: Python tool to search and find GitHub data
+        type: Open-source
+      - name: Commit-stream
+        link: https://github.com/x1sec/commit-stream
+        description: Extract commit logs from the Github event API
+        type: Open-source
+      - name: github-dorks
+        link: https://github.com/techgaun/github-dorks
+        description: CLI tool to scan Github repos/organizations for sensitive information leaks
+        type: Open-source
+      - name: GitTools
+        link: https://github.com/internetwache/GitTools
+        description: Rip Web-accessible .git repositories
+        type: Open-source
+      - name: Shhgit
+        link: https://github.com/eth0izzle/shhgit
+        description: Search GitHub for sensitive data via the API
+        type: Open-source
+      - name: vcsmap
+        link: https://github.com/melvinsh/vcsmap
+        description: Plugin-based tool to scan public version control systems (GitHub) for sensitive information
+        type: Open-source
+  - topic: Transport Layer Security Tools
+    tools:
+      - name: Httprobe
+        link: https://github.com/tomnomnom/httprobe
+        description: Probes for working HTTP/HTTPS servers
+        type: Open-source
+      - name: SSLyze
+        link: https://github.com/nabla-c0d3/sslyze
+        description: TSL/SSL library to identify misconfigurations
+        type: Open-source
+      - name: SSLScan
+        link: https://github.com/rbsec/sslscan
+        description: Scans SSL certificates highlighting relevant information
+        type: Open-source
+      - name: Sublert
+        link: https://github.com/yassineaboukir/sublert
+        description: Python tool to leverage certificate transparency to monitor subdomains
+        type: Open-source
+      - name: testssl.sh
+        link: https://github.com/drwetter/testssl.sh
+        description: Command line tool to check ports for SSL/TSL protocols / services
+        type: Open-source
+      - name: tls_prober
+        link: https://github.com/WestpointLtd/tls_prober
+        description: Identify TLS/SSL implementations
+        type: Open-source
+  - topic: DNS Mappers/Subdomain Finders
+    tools:
+      - name: AltDNS
+        link: https://github.com/infosec-au/altdns
+        description: Recon tool for DNS subdomain discovery using generated patterns and resolution. Exports to brute forcing tools
+        type: Open-source
+      - name: BroadbandSearch
+        link: https://www.broadbandsearch.net/network-tools
+        description: Suite of tools for network recon
+        type: Commercial
+      - name: CloudFail
+        link: https://github.com/m0rtem/CloudFail
+        description: Unmask server IP addresses using old database records and detecting misconfigured DNS.
+        type: Open-source
+      - name: DNSDumpster
+        link: https://dnsdumpster.com/
+        description: DNS records research for recon
+        type: Free
+      - name: dnsmap
+        link: https://github.com/makefu/dnsmap/
+        description: Simple DNS mapper
+        type: Open-source
+      - name: Dnsgrep
+        link: https://github.com/erbbysam/DNSGrep
+        description: DNS lookup using Rapid7 rdns & fdns datasets
+        type: Open-source
+      - name: DNSSec Analyzer
+        link: https://dnssec-analyzer.verisignlabs.com/
+        description: Gives a good impression of environment and site situation
+        type: Free
+      - name: dnstracer
+        link: http://www.mavetju.org/unix/dnstracer.php
+        description: Traces DNS server information to source
+        type: Open-source
+      - name: Dnsprobe
+        link: https://github.com/projectdiscovery/dnsprobe
+        description: DNS lookup with user-supplied resolvers
+        type: Open-source
+      - name: dnsrecon
+        link: https://github.com/darkoperator/dnsrecon/
+        description: DNS enumeration script in Python
+        type: Open-source
+      - name: FindDomain
+        link: https://github.com/Findomain/Findomain
+        description: Domain monitoring and recon tool with alerts and API
+        type: Open-source
+      - name: Knockpy
+        link: https://github.com/guelfoweb/knock
+        description: Python tool to enumerate subdomains via word list with DNS zone transfer & wildcard DNS record bypass
+        type: Open-source
+      - name: Netsniff-ng
+        link: https://github.com/netsniff-ng/netsniff-ng
+        description: Linux network plumbing & recon tool
+        type: Open-source
+      - name: Massdns
+        link: https://github.com/blechschmidt/massdns
+        description: Stub-resolver for bulk DNS lookup & enumeration
+        type: Open-source
+      - name: Mass Scan
+        link: https://github.com/robertdavidgraham/masscan
+        description: SYN packet port scanner
+        type: Open-source
+      - name: passivedns-client
+        link: https://github.com/chrislee35/passivedns-client
+        description: Library and query tool for passive DNS databases
+        type: Open-source
+      - name: passivedns
+        link: https://github.com/gamelinux/passivedns
+        description: Network sniffer to create log files of DNS server answers
+        type: Open-source
+      - name: Rapid7 Forward DNS (FDNS)
+        link: https://opendata.rapid7.com/sonar.fdns_v2/
+        description: DNS request responses for all forward DNS names in Rapid7's Project Sonar
+        type: Free
+      - name: Shuffledns
+        link: https://github.com/projectdiscovery/shuffledns
+        description: Subdomain scanner using active bruteforce
+        type: Open-source
+      - name: Sublist3r
+        link: https://github.com/aboul3la/Sublist3r
+        description: Enumerate subdomains using OSINT
+        type: Open-source
+  - topic: Proxies
+    tools:
+      - name: Fiddler
+        link: https://www.telerik.com/fiddler
+        description: Web debugging proxy suitable for recon
+        type: Commercial
+      - name: Foxyproxy
+        link: https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
+        description: Browser plugin to offer enhanced proxy management in Firefox
+        type: Free
+      - name: mallory
+        link: https://github.com/justmao945/mallory
+        description: HTTP/HTTPS proxy over SSH
+        type: Open-source
+      - name: mitmproxy
+        link: https://github.com/mitmproxy/mitmproxy
+        description: SSL/TLS-capable intercepting proxy with a console interface for HTTP/1, HTTP/2, and WebSockets. Web and command line versions available
+        type: Open-source
+      - name: Burp
+        link: ""
+        description: Includes a full proxy
+        type: Commercial
+      - name: ZAP
+        link: ""
+        description: An intercepting capable proxy
+        type: Open-source
+  - topic: Port Scanners
+    tools:
+      - name: Naabu
+        link: https://github.com/projectdiscovery/naabu
+        description: Port scanner for attack surface discovery and enumeration
+        type: Open-source
+      - name: NMap
+        link: https://nmap.org/book/port-scanning-tutorial.html
+        description: Extremely popular port scanner
+        type: Open-source
+  - topic: Misc. Tools
+    tools:
+      - name: NCat
+        link: https://nmap.org/ncat/
+        description: Swissarmy knife for pentesters
+        type: Open-source
+      - name: Osmedeus
+        link: https://github.com/j3ssie/osmedeus
+        description: A workflow engine to put together scanners and tools for reconnaissance
+        type: Open-source
+      - name: Reconness
+        link: https://github.com/reconness/reconness
+        description: Script to schedule tools and keep recon information in one place
+        type: Open-source
+      - name: Swiftness X
+        link: https://github.com/ehrishirajsharma/SwiftnessX
+        description: A note-taking tool for BB and pentesting
+        type: Open-source
+      - name: tgcd
+        link: http://tgcd.sourceforge.net/
+        description: Unix network extensibility for listening, port forwarding, and logging
+        type: Open-source
+      - name: scanless
+        link: https://github.com/vesche/scanless
+        description: Utility for finding third-party websites to do port scans on your behalf
+        type: Open-source
+      - name: SSH MITM
+        link: https://github.com/jtesta/ssh-mitm
+        description: SSH connection interceptor over proxy with plaintext logs
+        type: Open-source
+  - topic: Vulnerability Scanners
+    tools:
+      - name: ACSTIS
+        link: https://github.com/tijme/angularjs-csti-scanner
+        description: Client-side template injection scanner
+        type: Open-source
+      - name: Acunetix
+        link: https://www.acunetix.com/
+        description: Web application vulnerability scanner with DAS/IAST and SCA + 7,000+ vulnerabilities in library
+        type: Commercial
+      - name: Amazon Inspector
+        link: https://aws.amazon.com/inspector/
+        description: Scanner and risk management platform
+        type: Commercial
+      - name: Astra
+        link: https://www.getastra.com/
+        description: Continuous scanning platform for web apps, API, network, mobile app, & cloud infrastructure
+        type: Commercial
+      - name: BlackDuck
+        link: https://www.blackducksoftware.com/
+        description: Open-source security and license compliance management platform
+        type: Commercial
+      - name: BurpSuite
+        link: https://portswigger.net/burp/vulnerability-scanner
+        description: A web vulnerability scanner used by over 16,000 organizations as part of a larger suite of vulnerability assessment tools
+        type: Commercial
+      - name: Checkmarx
+        link: https://checkmarx.com/
+        description: Full suite of SAST, DAST, and code scanning tools built for internal teams
+        type: Commercial
+      - name: Codename SCNR
+        link: https://ecsypno.com/pages/codename-scnr
+        description: A zero-dependency scriptable framework and web application scanner
+        type: Commercial
+      - name: Comodo HacckerProof
+        link: https://www.comodo.com/hackerproof/
+        description: Schedulable scanner with PCI options
+        type: Commercial
+      - name: Core Impact
+        link: https://www.coresecurity.com/products/core-impact
+        description: Vulnerability scanner with pentesting environment
+        type: Commercial
+      - name: Detectify
+        link: https://detectify.com/lp/online-vulnerability-scanner
+        description: Automated vulnerability scanner with 2,000+ vulnerabilities in the library
+        type: Commercial
+      - name: Dnscan
+        link: https://github.com/rbsec/dnscan
+        description: Wordlist-based DNS subdomain scanner with zone-transfer functionality
+        type: Open-source
+      - name: HCL AppScan
+        link: https://www.hcltechsw.com/appscan
+        description: Cloud-based application scanner with code review
+        type: Commercial
+      - name: Intruder.io
+        link: https://www.intruder.io/
+        description: Vulnerability management and scanner intended for internal teams
+        type: Commercial
+      - name: Invicti
+        link: https://www.invicti.com/
+        description: (Formerly Netsparker) Web and code vulnerability scanner designed for internal teams
+        type: Commercial
+      - name: joomscan
+        link: https://www.owasp.org/index.php/Category:OWASP_Joomla_Vulnerability_Scanner_Project
+        description: Open-source Joomla vulnerability scanner
+        type: Open-source
+      - name: Nexpose
+        link: https://www.rapid7.com/products/nexpose/
+        description: Vulnerability and risk management assessment tool by Rapid7
+        type: Commercial
+      - name: Nessus
+        link: https://www.tenable.com/products/nessus-vulnerability-scanner
+        description: Vulnerability management, configuration, and compliance assessment platform
+        type: Commercial
+      - name: Nikto
+        link: https://cirt.net/nikto2
+        description: Open-source black box web server and web application vulnerability scanner
+        type: Open-source
+      - name: NMap
+        link: https://nmap.org/
+        description: Free security scanner for network exploration & security audits scripts
+        type: Open-source
+      - name: NodeZero
+        link: https://www.horizon3.ai/nodezero/
+        description: Asset discovery and vulnerability scanner for internal and external pentest teams
+        type: Commercial
+      - name: Nuclei
+        link: https://github.com/projectdiscovery/nuclei
+        description: Templated vulnerability scanner
+        type: Open-source
+      - name: OpenVAS
+        link: http://www.openvas.org/
+        description: Free implementation of the Nessus vulnerability assessment system
+        type: Open-source
+      - name: Probely
+        link: https://probely.com/
+        description: Web application and API vulnerability scanner
+        type: Commercial
+      - name: Qualys
+        link: https://www.qualys.com/
+        description: Vulnerability detection and management platform for compliance and internal security
+        type: Commercial
+      - name: Rapid7
+        link: http://rapid7/
+        description: Platform with a range of products for vulnerability and threat insights
+        type: Commercial
+      - name: SecApps
+        link: https://secapps.com/
+        description: In-browser web application security testing suite
+        type: Commercial
+      - name: Sophos
+        link: https://www.sophos.com/en-us?&cmp=113100
+        description: Endpoint and web application scanning and threat prevention
+        type: Commercial
+      - name: Travis
+        link: https://travis-ci.org/
+        description: A cloud-based continuous integration service that can be used for security scanning and vulnerability detection
+        type: Commercial
+      - name: Vulnerability Manager Plus
+        link: https://www.manageengine.com/vulnerability-management/
+        description: Scanner designed for internal pentest teams with security recommendations and patch management integrated
+        type: Commercial
+      - name: Vuls
+        link: https://github.com/future-architect/vuls
+        description: Agentless vulnerability scanner for GNU/Linux and FreeBSD, written in Go
+        type: Open-source
+      - name: w3af
+        link: https://github.com/andresriancho/w3af
+        description: Hacking tools for web application attack and audit framework
+        type: Open-source
+      - name: Wapiti
+        link: http://wapiti.sourceforge.net/
+        description: Black box web application vulnerability scanner with built-in fuzzer and injection tools
+        type: Open-source
+      - name: WPScan
+        link: https://wpscan.org/
+        description: Hacking tools of black box WordPress vulnerability scanner
+        type: Open-source
+      - name: ZAP
+        link: https://www.zaproxy.org/
+        description: OWASP's web app scanner
+        type: Open-source
+  - topic: Utilities (Windows)
+    tools:
+      - name: DeathStar
+        link: https://github.com/byt3bl33d3r/DeathStar
+        description: Python script to gain Active Directory administrative rights
+        type: Open-source
+      - name: Fibratus
+        link: https://github.com/rabbitstack/fibratus
+        description: Windows kernel exploration and tracing tool
+        type: Open-source
+      - name: Magic Unicorn
+        link: https://github.com/trustedsec/unicorn
+        description: Shellcode generator and injection tool
+        type: Open-source
+      - name: mimikatz
+        link: http://blog.gentilkiwi.com/mimikatz
+        description: Extract windows credentials
+        type: Open-source
+      - name: PowerSploit
+        link: https://github.com/PowerShellMafia/PowerSploit
+        description: PowerShell Post-Exploitation Framework
+        type: Open-source
+      - name: redsnarf
+        link: https://github.com/nccgroup/redsnarf
+        description: Post-exploitation tool to retrieve password hashes and credentials from Windows workstations, servers, and domain controllers
+        type: Open-source
+      - name: Responder
+        link: https://github.com/SpiderLabs/Responder
+        description: LLMNR, NBT-NS, and MDNS poisoner
+        type: Open-source
+      - name: Sysinternals Suite
+        link: https://technet.microsoft.com/en-us/sysinternals/bb842062
+        description: Microsoft's Sysinternals Troubleshooting Utilities
+        type: Free
+      - name: Windows Exploit Suggester
+        link: https://github.com/GDSSecurity/Windows-Exploit-Suggester
+        description: Scan for missing Windows patches and vulnerabilities
+        type: Open-source
+
+  - topic: Utilities (GNU/Linux)
+    tools:
+      - name: Linux Exploit Suggester
+        link: https://github.com/PenturaLabs/Linux_Exploit_Suggester
+        description: Heuristic reporting on potential exploits for GNU/Linux
+        type: Open-source
+
+  - topic: Utilities (macOS)
+    tools:
+      - name: EggShell
+        link: https://github.com/lucasjacks0n/EggShell
+        description: Remote administration tool for OSX
+        type: Open-source
+      - name: EmPyre
+        link: https://github.com/EmpireProject/EmPyre
+        description: Post exploitation OS X agent
+        type: Open-source
+      - name: EvilOSX
+        link: https://github.com/Marten4n6/EvilOSX
+        description: Remote Administration tool for OS X
+        type: Open-source
+      - name: Kemon
+        link: https://securityonline.info/kemon/
+        description: Open source kernel monitoring
+        type: Open-source
+      - name: Keychain dump
+        link: https://github.com/juuso/keychaindump
+        description: Searches for unlocked keychain master keys
+        type: Open-source
+      - name: Machotools
+        link: https://github.com/enthought/machotools
+        description: Retrieve and change machotool data
+        type: Open-source
+      - name: MOSL
+        link: https://github.com/0xmachos/homebrew-mosl
+        description: Audit MacOS security settings
+        type: Open-source
+      - name: PassiveFuzzFramework OSX
+        link: https://github.com/SilverMoonSecurity/PassiveFuzzFrameworkOSX
+        description: Fuzzing tool for OSX kernel vulnerabilities
+        type: Open-source
+

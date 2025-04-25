@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+    {{- partial "head.html" . -}}
+</head>
+<body>
+    {{- partial "header.html" . -}}
+    <div style="height: 50px;"></div>
+    <div class="container">
+        <h1 class="text-secondary text-center">Pandora</h1>
+        <p class="text-white text-center">Pandora is a open-source curated collection of powerful cybersecurity tools designed to assist in penetration testing, digital forensics, threat hunting, and much more.</p>
+        <div class="d-flex align-items-center justify-content-center">
+            <a class="mx-2 btn btn-secondary" href="">Recommend New Tools</a>
+            <a class="mx-2 btn btn-outline-secondary" href="">Tools Removal</a>
+        </div>
+        
+    </div>
+        {{ range .Site.Data.tools.list}}
+        <div style="height: 50px;"></div>
+        <div class="container">
+            <h2 class="mb-4 text-secondary">{{ .topic }}</h2>
+            <div class="row g-4">
+                {{ range .tools }}
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="h-100 card bg-black">
+                        <div class="card-body">
+                            <a href="{{ .link }}" class="card-title text-primary text-decoration-none d-flex align-items-center">
+                                <h3 class="fs-4">{{ .name }}&nbsp;<span class="bi bi-arrow-right"></span></h3>
+                            </a>
+                            
+                            <p><span class='
+                                {{ if eq .type "Open-source"}}
+                                    bg-success text-white
+                                {{ end }}
+                                {{ if eq .type "Commercial"}}
+                                    bg-danger text-white
+                                {{ end }}
+                                {{ if eq .type "Free"}}
+                                    bg-warning
+                                {{ end }}
+                                rounded px-2 py-1 
+                                '>{{ .type }}</span></p>
+                            <p class="text-white">{{ .description }}</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        <div style="height: 50px;"></div>
+    
+
+    {{- partial "footer.html" . -}}
+</body>
+</html>
