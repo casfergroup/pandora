@@ -360,13 +360,6 @@ list:
           - recon
           - exploitation
           - objectives
-      - name: Canvas
-        link: https://www.immunityinc.com/products/canvas/
-        description: An automated exploit system and exploit development framework. Costs $32,480 per year including third-party products
-        type: Commercial
-        killchain:
-          - exploitation
-          - installation
       - name: Cobalt Strike
         link: https://www.cobaltstrike.com/
         description: A Fortra VM & threat emulation framework
@@ -398,25 +391,10 @@ list:
           - exploitation
           - installation
           - c2
-      - name: IronWASP
-        link: https://resources.infosecinstitute.com/ironwasp-part-1-2/
-        description: Framework for web-application vulnerability testing with tools & scanner capabilities
-        type: Open-source
-        killchain:
-          - recon
-          - exploitation
-      - name: Jok3r
-        link: https://hub.docker.com/r/koutto/jok3r/
-        description: A network infrastructure and web security assessment framework with automation & pentest tools
-        type: Open-source
-        killchain:
-          - recon
-          - delivery
-          - exploitation
       - name: Metasploit
         link: https://www.metasploit.com/
         description: Post-exploitation pentest tools to verify vulnerabilities, manage assessments, and more. Open Source and Pro available. Pro costs roughly $15,000 per year
-        type: Open-source / Commercial
+        type: Commercial
         killchain:
           - exploitation
           - installation
@@ -643,7 +621,7 @@ list:
           - exploitation
           - installation
       - name: RsaCtfTool
-        link: https://github.com/sourcekris/RsaCtfTool
+        link: https://github.com/RsaCtfTool/RsaCtfTool
         description: Attack and decrypt RSA tools
         type: Open-source
         killchain:
@@ -678,33 +656,9 @@ list:
           - weaponization
           - delivery
           - exploitation
-      - name: JS LOIC
-        link: http://metacortexsecurity.com/tools/anon/LOIC/LOICv1.html
-        description: JavaScript in-browser version of LOIC
-        type: Free
-        killchain:
-          - weaponization
-          - delivery
-          - exploitation
-      - name: LOIC
-        link: https://github.com/NewEraCracker/LOIC/
-        description: Open source network stress tool written in C#
-        type: Open-source
-        killchain:
-          - weaponization
-          - delivery
-          - exploitation
       - name: MHDDoS
         link: https://github.com/MatrixTM/MHDDoS
         description: Python3 DDoS attack script with 56 methods
-        type: Open-source
-        killchain:
-          - weaponization
-          - delivery
-          - exploitation
-      - name: Nightmare Stresser
-        link: https://github.com/NightmareStresser
-        description: DDoS API for stress testing with up to 150 concurrent floods
         type: Open-source
         killchain:
           - weaponization
@@ -788,21 +742,6 @@ list:
         killchain:
           - delivery
           - exploitation
-      - name: UniByAv
-        link: https://github.com/Mr-Un1k0d3r/UniByAv
-        description: Generates antivirus friendly executables from raw shellcode
-        type: Open-source
-        killchain:
-          - exploitation
-          - installation
-      - name: Veil
-        link: https://www.veil-framework.com/
-        description: Generate payloads to bypass common anti-virus solutions
-        type: Open-source
-        killchain:
-          - exploitation
-          - installation
-
 
   - topic: Hash & Cracking Hacking Tools
     tools:
@@ -813,13 +752,6 @@ list:
         killchain:
           - exploitation
           - installation
-      - name: Brutus Password Cracker
-        link: https://www.darknet.org.uk/2006/09/brutus-password-cracker-download-brutus-aet2zip-aet2/
-        description: Complex password retrieval with brute force, dictionary, & more
-        type: Free
-        killchain:
-          - exploitation
-          - installation
       - name: BruteForce Wallet
         link: https://github.com/glv2/bruteforce-wallet
         description: Wallet password search
@@ -827,26 +759,6 @@ list:
         killchain:
           - exploitation
           - installation
-      - name: Cain and Abel
-        link: https://www.darknet.org.uk/2007/01/cain-and-abel-download-windows-password-cracker/
-        description: Sniffer and password cracking for forensics
-        type: Free
-        killchain:
-          - exploitation
-          - installation
-      - name: CrackStation
-        link: https://crackstation.net/
-        description: Browser-based password hash-cracking
-        type: Free
-        killchain:
-          - exploitation
-          - installation
-      - name: CeWL
-        link: https://digi.ninja/projects/cewl.php
-        description: Custom wordlists for spidering to feed password crackers
-        type: Open-source
-        killchain:
-          - recon
       - name: Hashcat
         link: http://hashcat.net/hashcat/
         description: Hash cracking tool
@@ -2047,12 +1959,6 @@ list:
         type: Open-source
         killchain:
           - recon
-      - name: Commit-stream
-        link: https://github.com/x1sec/commit-stream
-        description: Extract commit logs from the Github event API
-        type: Open-source
-        killchain:
-          - recon
       - name: github-dorks
         link: https://github.com/techgaun/github-dorks
         description: CLI tool to scan Github repos/organizations for sensitive information leaks
@@ -2167,8 +2073,8 @@ list:
         type: Open-source
         killchain:
           - recon
-      - name: Dnsprobe
-        link: https://github.com/projectdiscovery/dnsprobe
+      - name: dnsx
+        link: https://github.com/projectdiscovery/dnsx
         description: DNS lookup with user-supplied resolvers
         type: Open-source
         killchain:
