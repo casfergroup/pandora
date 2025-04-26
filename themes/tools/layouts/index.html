@@ -25,7 +25,7 @@
 
     {{- partial "killchain.html" . -}}
 
-    {{ with .Site.GetPage "section" "details" }}
+    {{ with .Site.GetPage "section" "tools" }}
     {{ range sort .Sections "Title" }}
         <div style="height: 50px;"></div>
         <div class="p-2 container">
