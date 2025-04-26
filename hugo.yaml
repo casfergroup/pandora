@@ -2,3 +2,16 @@ baseURL: https://pandora.casfergroup.com/
 languageCode: en-us
 title: Pandora
 theme: tools
+
+outputs:
+  home:
+    - HTML
+  section:
+    - HTML
+  taxonomy:
+    - HTML
+
+sitemap:
+  changefreq: "weekly"
+  priority: 0.5
+  filename: "sitemap.xml"

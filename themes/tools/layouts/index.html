@@ -7,8 +7,8 @@
     {{- partial "header.html" . -}}
     <div style="height: 50px;"></div>
     <div class="container d-flex flex-column align-items-center">
-        <h1 class="text-secondary text-center fw-semibold" style="font-size: 5em;">Pandora</h1>
-        <p class=" text-center" style="max-width: 800px;">Pandora is an open-source curated collection of powerful cybersecurity tools designed to assist in penetration testing, digital forensics, threat hunting, and much more.</p>
+        <h1 class="text-secondary text-center fw-semibold" style="font-size: 5em;">{{ .Title }}</h1>
+        <p class=" text-center" style="max-width: 800px;">{{ .Description }}</p>
         <p class=" text-center"> 
             {{ $tools := where .Site.Pages "Section" "details" }}
             {{ $tools = where $tools "File" "ne" nil }}
