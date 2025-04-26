@@ -40,7 +40,11 @@
     {{ range sort .Sections "Title" }}
         <div style="height: 50px;"></div>
         <div class="container">
-            <h2 class="mb-4 text-secondary">{{ .Title }}</h2> <!-- topic from _index.md -->
+            <div class="mb-4 d-flex justify-content-between">
+                <h2 class="text-secondary">{{ .Title }}</h2>
+                <a class="btn btn-secondary fs-5 d-flex align-items-center" href="{{ .Permalink }}">Explore&nbsp;<span class="bi bi-arrow-right"></span></a>
+            </div>
+            
             <div class="row g-4">
                 {{ range where .Pages "File.BaseFileName" "ne" "_index" }}
                     <div class="col-12 col-md-6 col-xl-4">

@@ -1,8 +1,84 @@
-{{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
-{{ end }}
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+<head>
+    {{- partial "head.html" . -}}
+</head>
+<body>
+    {{- partial "header.html" . -}}
+    <div style="height: 50px;"></div>
+    <div class="container d-flex flex-column align-items-center">
+        <h1 class="text-secondary text-center fw-semibold" style="font-size: 5em;">{{ .Title }}</h1>
+        <p class="text-white text-center" style="max-width: 800px;">{{ .Description }}</p>
+        <p class="text-white text-center">
+            {{ len .Pages }}
+            listed tools
+            <span class="bi bi-dot"></span>Last update on {{ now.Format "2006-01-02" }}
+          </p>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <a class="m-2 btn btn-secondary" href="https://github.com/casfergroup/pandora/issues/new/choose">Recommend Tools</a>
+            <a class="m-2 btn btn-outline-secondary" href="https://github.com/casfergroup/pandora">Contribute</a>
+        </div>
+    </div>
+
+    <div class="container p-4 bg-black rounded mt-5">
+        <h2 class="mb-4 text-secondary">Cyber Kill Chain</h2>
+        <div class="row text-white">
+            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span> <strong>Recon:</strong> Information gathering stage, where attackers gather as much information as possible about the target.</p>
+            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-wrench" title="Weaponization"></span> <strong>Weaponization:</strong> Crafting of tools or payloads to exploit vulnerabilities.</p>
+            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-box-arrow-in-right" title="Delivery"></span> <strong>Delivery:</strong> The transmission of the weaponized payload to the target.</p>
+            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-bug" title="Exploitation"></span> <strong>Exploitation:</strong> Exploiting a vulnerability to gain access to the target system.</p>
+            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-download" title="Installation"></span> <strong>Installation:</strong> Establishing a foothold on the target system.</p>
+            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-diagram-3" title="Command & Control (C2)"></span> <strong>Command & Control (C2):</strong> Setting up channels for communication with the compromised system.</p>
+            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-shield-x" title="Actions on Objectives"></span> <strong>Actions on Objectives:</strong> Achieving the intended goal of the attack, such as data exfiltration or system disruption.</p>
+        </div>
+    </div>
+    <div style="height: 50px;"></div>
+    <div class="container">
+      <div class="row g-4">
+        {{ range sort (where .Pages "File.BaseFileName" "ne" "_index") "Title" }}
+          <div class="col-12 col-md-6 col-xl-4">
+              <div class="h-100 card bg-black">
+                  <div class="card-body">
+                      <a href="{{ .Permalink }}" class="card-title text-primary text-decoration-none d-flex align-items-center">
+                          <h3 class="fs-4">{{ .Title }}&nbsp;<span class="bi bi-arrow-right"></span></h3>
+                      </a>
+                      
+                      <p>
+                          {{ range .Params.license }}
+                              <span class='
+                                  {{ if eq . "Open-source" }}
+                                      bg-success text-white
+                                  {{ else if eq . "Commercial" }}
+                                      bg-danger text-white
+                                  {{ else if eq . "Free" }}
+                                      bg-warning
+                                  {{ end }}
+                                  rounded px-2 py-1
+                              '>
+                                  {{ . }}
+                              </span>
+                          {{ end }}
+                          {{ range .Params.killchain }}
+                              {{ if eq . "recon" }}&nbsp;<span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span>{{ end }}
+                              {{ if eq . "weaponization" }}&nbsp;<span class="fs-5 text-secondary bi bi-wrench" title="Weaponization"></span>{{ end }}
+                              {{ if eq . "delivery" }}&nbsp;<span class="fs-5 text-secondary bi bi-box-arrow-in-right" title="Delivery"></span>{{ end }}
+                              {{ if eq . "exploitation" }}&nbsp;<span class="fs-5 text-secondary bi bi-bug" title="Exploitation"></span>{{ end }}
+                              {{ if eq . "installation" }}&nbsp;<span class="fs-5 text-secondary bi bi-download" title="Installation"></span>{{ end }}
+                              {{ if eq . "c2" }}&nbsp;<span class="fs-5 text-secondary bi bi-diagram-3" title="Command & Control (C2)"></span>{{ end }}
+                              {{ if eq . "objectives" }}&nbsp;<span class="fs-5 text-secondary bi bi-shield-x" title="Actions on Objectives"></span>{{ end }}
+                          {{ end }}
+                      </p>
+                      <p class="text-white">{{ .Params.description }}</p>
+                  </div>
+              </div>
+          </div>    
+        {{ end }}
+      </div>
+    </div>
+    <div style="height: 50px;"></div>
+    
+    
+
+    {{- partial "footer.html" . -}}
+</body>
+</html>
