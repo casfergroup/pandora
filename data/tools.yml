@@ -914,10 +914,11 @@ list:
     tools:
       - name: AttackForge
         link: ""
-        description: A pentest management and reporting tool (Commercial)
+        description: A pentest management and reporting tool
         type: Commercial
       - name: Reconmap
-        link: ""proration platform (Commercial)
+        link: ""
+        description: A pentest collaboration platform
         type: Commercial
       - name: Faraday
         link: https://github.com/infobyte/faraday
@@ -981,6 +982,14 @@ list:
         link: https://github.com/fuzzdb-project/fuzzdb
         description: Dictionary of attack patterns and primitives for black-box application fault injection and resource discovery
         type: Open-source
+      - name: IntelX
+        link: https://intelx.io/
+        description: OSINT search engine and data archive for email, domain, IP, Bitcoin address, and more
+        type: Commercial
+      - name: Have I Been Pwned?
+        link: https://haveibeenpwned.com/
+        description: Service to check if your email or phone number has been compromised in a data breach
+        type: Free
       - name: Recon_profile
         link: https://github.com/nahamsec/recon_profile
         description: Alias creation tool
@@ -1142,6 +1151,7 @@ list:
         link: https://www.zoomeye.org/
         description: Network component search engine
         type: Commercial
+
   - topic: Dorks
     tools:
       - name: BinGoo
@@ -1372,20 +1382,20 @@ list:
         description: An intercepting capable proxy
         type: Open-source
 
-    - topic: Port Scanners
-      tools:
-        - name: Naabu
-          link: https://github.com/projectdiscovery/naabu
-          description: Port scanner for attack surface discovery and enumeration
-          type: Open-source
-        - name: NMap
-          link: https://nmap.org/book/port-scanning-tutorial.html
-          description: Extremely popular port scanner
-          type: Open-source
-        - name: Zenmap
-          link: https://nmap.org/zenmap/
-          description: Official GUI frontend for NMap with scanning profiles and visualization
-          type: Open-source
+  - topic: Port Scanners
+    tools:
+      - name: Naabu
+        link: https://github.com/projectdiscovery/naabu
+        description: Port scanner for attack surface discovery and enumeration
+        type: Open-source
+      - name: NMap
+        link: https://nmap.org/book/port-scanning-tutorial.html
+        description: Extremely popular port scanner
+        type: Open-source
+      - name: Zenmap
+        link: https://nmap.org/zenmap/
+        description: Official GUI frontend for NMap with scanning profiles and visualization
+        type: Open-source
 
   - topic: Misc. Tools
     tools:
