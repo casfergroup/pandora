@@ -10,11 +10,10 @@
         <h1 class="text-secondary text-center fw-semibold" style="font-size: 5em;">Pandora</h1>
         <p class="text-white text-center" style="max-width: 800px;">Pandora is an open-source curated collection of powerful cybersecurity tools designed to assist in penetration testing, digital forensics, threat hunting, and much more.</p>
         <p class="text-white text-center"> 
-            {{ $totalTools := 0 }} 
-            {{ range .Site.Data.tools.list }}
-              {{ $totalTools = add $totalTools (len .tools) }}
-            {{ end }}
-            {{ $totalTools }}
+            {{ $tools := where .Site.Pages "Section" "details" }}
+            {{ $tools = where $tools "File" "ne" nil }}
+            {{ $tools = where $tools "File.BaseFileName" "ne" "_index" }}
+            {{ len $tools }}
             listed tools
             <span class="bi bi-dot"></span>Last update on {{ now.Format "2006-01-02" }}
           </p>
@@ -37,50 +36,57 @@
         </div>
     </div>
 
-    {{ range sort .Site.Data.tools.list "topic" }}
+    {{ with .Site.GetPage "section" "details" }}
+    {{ range sort .Sections "Title" }}
         <div style="height: 50px;"></div>
         <div class="container">
-            <h2 class="mb-4 text-secondary">{{ .topic }}</h2>
+            <h2 class="mb-4 text-secondary">{{ .Title }}</h2> <!-- topic from _index.md -->
             <div class="row g-4">
-                {{ range .tools }}
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div class="h-100 card bg-black">
-                        <div class="card-body">
-                            <a href="{{ .link }}" class="card-title text-primary text-decoration-none d-flex align-items-center">
-                                <h3 class="fs-4">{{ .name }}&nbsp;<span class="bi bi-arrow-right"></span></h3>
-                            </a>
-                            
-                            <p><span class='
-                                {{ if eq .type "Open-source"}}
-                                    bg-success text-white
-                                {{ end }}
-                                {{ if eq .type "Commercial"}}
-                                    bg-danger text-white
-                                {{ end }}
-                                {{ if eq .type "Free"}}
-                                    bg-warning
-                                {{ end }}
-                                rounded px-2 py-1 
-                                '>{{ .type }}</span>
-                                {{ range .killchain }}
-                                    {{ if eq . "recon" }}&nbsp;<span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span>{{ end }}
-                                    {{ if eq . "weaponization" }}&nbsp;<span class="fs-5 text-secondary bi bi-wrench" title="Weaponization"></span>{{ end }}
-                                    {{ if eq . "delivery" }}&nbsp;<span class="fs-5 text-secondary bi bi-box-arrow-in-right" title="Delivery"></span>{{ end }}
-                                    {{ if eq . "exploitation" }}&nbsp;<span class="fs-5 text-secondary bi bi-bug" title="Exploitation"></span>{{ end }}
-                                    {{ if eq . "installation" }}&nbsp;<span class="fs-5 text-secondary bi bi-download" title="installation"></span>{{ end }}
-                                    {{ if eq . "c2" }}&nbsp;<span class="fs-5 text-secondary bi bi-diagram-3" title="Command & Control (C2)"></span>{{ end }}
-                                    {{ if eq . "objectives" }}&nbsp;<span class="fs-5 text-secondary bi bi-shield-x" title="Actions on Objectives"></span>{{ end }}
-                                {{ end }}
-                            </p>
-                            <p class="text-white">{{ .description }}</p>
-                            
+                {{ range where .Pages "File.BaseFileName" "ne" "_index" }}
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="h-100 card bg-black">
+                            <div class="card-body">
+                                <a href="{{ .Permalink }}" class="card-title text-primary text-decoration-none d-flex align-items-center">
+                                    <h3 class="fs-4">{{ .Title }}&nbsp;<span class="bi bi-arrow-right"></span></h3>
+                                </a>
+                                
+                                <p>
+                                    {{ range .Params.license }}
+                                        <span class='
+                                            {{ if eq . "Open-source" }}
+                                                bg-success text-white
+                                            {{ else if eq . "Commercial" }}
+                                                bg-danger text-white
+                                            {{ else if eq . "Free" }}
+                                                bg-warning
+                                            {{ end }}
+                                            rounded px-2 py-1
+                                        '>
+                                            {{ . }}
+                                        </span>
+                                    {{ end }}
+                                    {{ range .Params.killchain }}
+                                        {{ if eq . "recon" }}&nbsp;<span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span>{{ end }}
+                                        {{ if eq . "weaponization" }}&nbsp;<span class="fs-5 text-secondary bi bi-wrench" title="Weaponization"></span>{{ end }}
+                                        {{ if eq . "delivery" }}&nbsp;<span class="fs-5 text-secondary bi bi-box-arrow-in-right" title="Delivery"></span>{{ end }}
+                                        {{ if eq . "exploitation" }}&nbsp;<span class="fs-5 text-secondary bi bi-bug" title="Exploitation"></span>{{ end }}
+                                        {{ if eq . "installation" }}&nbsp;<span class="fs-5 text-secondary bi bi-download" title="Installation"></span>{{ end }}
+                                        {{ if eq . "c2" }}&nbsp;<span class="fs-5 text-secondary bi bi-diagram-3" title="Command & Control (C2)"></span>{{ end }}
+                                        {{ if eq . "objectives" }}&nbsp;<span class="fs-5 text-secondary bi bi-shield-x" title="Actions on Objectives"></span>{{ end }}
+                                    {{ end }}
+                                </p>
+                                <p class="text-white">{{ .Params.description }}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
                 {{ end }}
             </div>
         </div>
-        {{ end }}
+    {{ end }}
+{{ end }}
+
+
+
         <div style="height: 50px;"></div>
     
 
