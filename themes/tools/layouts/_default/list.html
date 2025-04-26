@@ -7,13 +7,13 @@
     {{- partial "header.html" . -}}
     <div style="height: 50px;"></div>
     <div class="container d-flex flex-column align-items-center">
-        <h1 class="text-secondary text-center fw-semibold" style="font-size: 5em;">{{ .Title }}</h1>
+        <h1 class="text-secondary text-center fw-semibold" style="font-size: 3em;">{{ .Title }}</h1>
         <p class="text-center" style="max-width: 800px;">{{ .Description }}</p>
-        <p class="text-center">
-            {{ len .Pages }}
-            listed tools
-            <span class="bi bi-dot"></span>Last update on {{ now.Format "2006-01-02" }}
-          </p>
+        <p class="d-flex flex-column flex-md-row align-items-center ">
+            <span>{{ len .Pages }} listed tools</span>
+            <span class="d-none d-md-block bi bi-dot"></span>
+            <span>Last update on {{ now.Format "2006-01-02" }}</span>
+        </p>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <a class="m-2 btn btn-secondary" href="/">See All</a>
             <a class="m-2 btn btn-outline-secondary" href="https://github.com/casfergroup/pandora">Contribute</a>
@@ -45,7 +45,7 @@
                                   rounded px-2 py-1
                               '>
                                   {{ . }}
-                              </span>
+                              </span>&nbsp;
                           {{ end }}
                           {{ range .Params.killchain }}
                               {{ if eq . "recon" }}&nbsp;<span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span>{{ end }}

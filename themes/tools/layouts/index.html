@@ -6,17 +6,17 @@
 <body>
     {{- partial "header.html" . -}}
     <div style="height: 50px;"></div>
-    <div class="container d-flex flex-column align-items-center">
-        <h1 class="text-secondary text-center fw-semibold" style="font-size: 5em;">{{ .Title }}</h1>
-        <p class=" text-center" style="max-width: 800px;">{{ .Description }}</p>
-        <p class=" text-center"> 
+    <div class="p-2 container d-flex flex-column align-items-center">
+        <h1 class="text-secondary text-center fw-semibold" style="font-size: 3em;">{{ .Title }}</h1>
+        <p class="text-center" style="max-width: 800px;">{{ .Description }}</p>
+        <p class="d-flex flex-column flex-md-row align-items-center "> 
             {{ $tools := where .Site.Pages "Section" "details" }}
             {{ $tools = where $tools "File" "ne" nil }}
             {{ $tools = where $tools "File.BaseFileName" "ne" "_index" }}
-            {{ len $tools }}
-            listed tools
-            <span class="bi bi-dot"></span>Last update on {{ now.Format "2006-01-02" }}
-          </p>
+            <span>{{ len $tools }} listed tools</span>
+            <span class="d-none d-md-block bi bi-dot"></span>
+            <span>Last update on {{ now.Format "2006-01-02" }}</span>
+        </p>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <a class="m-2 btn btn-secondary" href="https://github.com/casfergroup/pandora/issues/new/choose">Recommend Tools</a>
             <a class="m-2 btn btn-outline-secondary" href="https://github.com/casfergroup/pandora">Contribute</a>
@@ -28,9 +28,9 @@
     {{ with .Site.GetPage "section" "details" }}
     {{ range sort .Sections "Title" }}
         <div style="height: 50px;"></div>
-        <div class="container">
+        <div class="p-2 container">
             <div class="mb-4 d-flex justify-content-between">
-                <h2 class="text-secondary">{{ .Title }}</h2>
+                <h2 class="m-0 text-secondary align-self-center">{{ .Title }}</h2>
                 <a class="btn btn-secondary fs-5 d-flex align-items-center" href="{{ .Permalink }}">Explore&nbsp;<span class="bi bi-arrow-right"></span></a>
             </div>
             
@@ -56,7 +56,7 @@
                                             rounded px-2 py-1
                                         '>
                                             {{ . }}
-                                        </span>
+                                        </span>&nbsp;
                                     {{ end }}
                                     {{ range .Params.killchain }}
                                         {{ if eq . "recon" }}&nbsp;<span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span>{{ end }}
@@ -76,7 +76,7 @@
             </div>
         </div>
     {{ end }}
-{{ end }}
+    {{ end }}
 
 
 

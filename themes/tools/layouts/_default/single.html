@@ -7,7 +7,7 @@
     {{- partial "header.html" . -}}
     <div style="height: 50px;"></div>
     <section class="container d-flex flex-column align-items-center">
-        <h1 class="mb-3 text-secondary text-center fw-semibold" style="font-size: 5em;">{{ .Title }}</h1>
+        <h1 class="mb-3 text-secondary text-center fw-semibold" style="font-size: 3em;">{{ .Title }}</h1>
         <p>
             {{ with .Parent }}
                 <a class="btn btn-secondary px-2 py-0 m-1" href="{{ .Permalink }}">{{ .Title }}</a>
@@ -30,7 +30,7 @@
         <p class="mb-3 text-center" style="max-width: 800px;">{{ .Description }}</p>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <a class="m-2 btn btn-secondary" href="/">See All Tools</a>
-            <a class="m-2 btn btn-outline-secondary" href="https://github.com/casfergroup/pandora">Propose Changes</a>
+            <a class="m-2 btn btn-outline-secondary" href="https://github.com/casfergroup/pandora/tree/main/content/{{ .File.Path }}">Propose Changes</a>
         </div>
     </section>
     <div style="height: 50px;"></div>
