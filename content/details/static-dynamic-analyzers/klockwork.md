@@ -7,4 +7,5 @@ license:
   - "Commercial"
 killchain:
   - recon
-  - 
+  - exploitation
+---
