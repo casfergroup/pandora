@@ -8,8 +8,8 @@
     <div style="height: 50px;"></div>
     <div class="container d-flex flex-column align-items-center">
         <h1 class="text-secondary text-center fw-semibold" style="font-size: 5em;">Pandora</h1>
-        <p class="text-white text-center" style="max-width: 800px;">Pandora is an open-source curated collection of powerful cybersecurity tools designed to assist in penetration testing, digital forensics, threat hunting, and much more.</p>
-        <p class="text-white text-center"> 
+        <p class=" text-center" style="max-width: 800px;">Pandora is an open-source curated collection of powerful cybersecurity tools designed to assist in penetration testing, digital forensics, threat hunting, and much more.</p>
+        <p class=" text-center"> 
             {{ $tools := where .Site.Pages "Section" "details" }}
             {{ $tools = where $tools "File" "ne" nil }}
             {{ $tools = where $tools "File.BaseFileName" "ne" "_index" }}
@@ -23,18 +23,7 @@
         </div>
     </div>
 
-    <div class="container p-4 bg-black rounded mt-5">
-        <h2 class="mb-4 text-secondary">Cyber Kill Chain</h2>
-        <div class="row text-white">
-            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span> <strong>Recon:</strong> Information gathering stage, where attackers gather as much information as possible about the target.</p>
-            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-wrench" title="Weaponization"></span> <strong>Weaponization:</strong> Crafting of tools or payloads to exploit vulnerabilities.</p>
-            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-box-arrow-in-right" title="Delivery"></span> <strong>Delivery:</strong> The transmission of the weaponized payload to the target.</p>
-            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-bug" title="Exploitation"></span> <strong>Exploitation:</strong> Exploiting a vulnerability to gain access to the target system.</p>
-            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-download" title="Installation"></span> <strong>Installation:</strong> Establishing a foothold on the target system.</p>
-            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-diagram-3" title="Command & Control (C2)"></span> <strong>Command & Control (C2):</strong> Setting up channels for communication with the compromised system.</p>
-            <p class="col-12 col-md-6"><span class="fs-5 text-secondary bi bi-shield-x" title="Actions on Objectives"></span> <strong>Actions on Objectives:</strong> Achieving the intended goal of the attack, such as data exfiltration or system disruption.</p>
-        </div>
-    </div>
+    {{- partial "killchain.html" . -}}
 
     {{ with .Site.GetPage "section" "details" }}
     {{ range sort .Sections "Title" }}
@@ -58,9 +47,9 @@
                                     {{ range .Params.license }}
                                         <span class='
                                             {{ if eq . "Open-source" }}
-                                                bg-success text-white
+                                                bg-success 
                                             {{ else if eq . "Commercial" }}
-                                                bg-danger text-white
+                                                bg-danger 
                                             {{ else if eq . "Free" }}
                                                 bg-warning
                                             {{ end }}
@@ -79,7 +68,7 @@
                                         {{ if eq . "objectives" }}&nbsp;<span class="fs-5 text-secondary bi bi-shield-x" title="Actions on Objectives"></span>{{ end }}
                                     {{ end }}
                                 </p>
-                                <p class="text-white">{{ .Params.description }}</p>
+                                <p class="">{{ .Params.description }}</p>
                             </div>
                         </div>
                     </div>

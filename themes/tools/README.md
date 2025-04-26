@@ -1,7 +1,2 @@
 # Theme Name
-
-## Features
-
-## Installation
-
-## Configuration
+Pandora
