@@ -10,7 +10,7 @@
         <h1 class="text-secondary text-center fw-semibold" style="font-size: 3em;">{{ .Title }}</h1>
         <p class="text-center" style="max-width: 800px;">{{ .Description }}</p>
         <p class="d-flex flex-column flex-md-row align-items-center "> 
-            {{ $tools := where .Site.Pages "Section" "details" }}
+            {{ $tools := where .Site.Pages "Section" "tools" }}
             {{ $tools = where $tools "File" "ne" nil }}
             {{ $tools = where $tools "File.BaseFileName" "ne" "_index" }}
             <span>{{ len $tools }} listed tools</span>
