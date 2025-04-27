@@ -1,4 +1,4 @@
 ---
 title: Guides
-description: Guides and cybersecurity tips.
+description: Explore our guides on cyber activities and training.
 ---
