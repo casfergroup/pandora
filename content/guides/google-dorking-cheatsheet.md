@@ -597,5 +597,6 @@ inurl:/api/v1/
 ```
 Notes: Exposed Kubernetes clusters = total system compromise.
 
+---
 
 For a deep-dive, refer to [this GitHub](https://github.com/Just-Roma/DorkingDB?tab=readme-ov-file).
