@@ -3,6 +3,9 @@ title: Google Dorking Cheat Sheet
 description: Guide on how to transform Google into a powerful tool.
 links:
   - https://www.google.com/
+  - https://github.com/cipher387/Dorks-collections-list/
+  - https://github.com/chr3st5an/Google-Dorking/
+  - https://github.com/Just-Roma/DorkingDB/
 killchain:
   - recon
 ---
