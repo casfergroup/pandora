@@ -8,6 +8,25 @@
     <div style="height: 50px;"></div>
     <section class="container d-flex flex-column align-items-center">
         <h1 class="mb-3 text-secondary text-center fw-semibold" style="font-size: 3em;">{{ .Title }}</h1>
+        <p>
+            {{ with .Parent }}
+                <a class="btn btn-secondary px-2 py-0 m-1" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end }}
+            {{ range .Params.license }}
+                <span class='btn
+                    {{ if eq . "Open-source" }}
+                        bg-success 
+                    {{ else if eq . "Commercial" }}
+                        bg-danger 
+                    {{ else if eq . "Free" }}
+                        bg-warning
+                    {{ end }}
+                    px-2 py-0 m-1
+                ' style="font-size: var(--bs-btn-font-size); cursor: default;">
+                    {{ . }}
+                </span>
+            {{ end }}
+        </p>
         <p class="mb-3 text-center" style="max-width: 800px;">{{ .Description }}</p>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             {{ with .Parent }}
@@ -50,9 +69,7 @@
                     <li><span class="fs-5 text-primary bi bi-shield-x" title="Actions on Objectives"></span>&nbsp;<strong>Actions on Objectives</strong></li>
                 {{ end }}
             {{ end }}
-        </ul> 
-    </section>
-    <section class="container cust-content">
+        </ul>
         {{ .Content }}        
     </section>
     

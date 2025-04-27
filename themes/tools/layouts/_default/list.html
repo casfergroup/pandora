@@ -10,12 +10,14 @@
         <h1 class="text-secondary text-center fw-semibold" style="font-size: 3em;">{{ .Title }}</h1>
         <p class="text-center" style="max-width: 800px;">{{ .Description }}</p>
         <p class="d-flex flex-column flex-md-row align-items-center ">
-            <span>{{ len .Pages }} listed tools</span>
+            <span>{{ len .Pages }} listed content</span>
             <span class="d-none d-md-block bi bi-dot"></span>
             <span>Last update on {{ now.Format "2006-01-02" }}</span>
         </p>
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-            <a class="m-2 btn btn-secondary" href="/">See All</a>
+            {{ with .Parent }}
+            <a class="m-2 btn btn-secondary" href="{{ .Permalink }}">Up a Level</a>
+            {{ end }}
             <a class="m-2 btn btn-outline-secondary" href="https://github.com/casfergroup/pandora">Contribute</a>
         </div>
     </div>
@@ -33,20 +35,6 @@
                           <h3 class="fs-4">{{ .Title }}&nbsp;<span class="bi bi-arrow-right"></span></h3>
                       </a>
                       <p>
-                          {{ range .Params.license }}
-                              <span class='
-                                  {{ if eq . "Open-source" }}
-                                      bg-success 
-                                  {{ else if eq . "Commercial" }}
-                                      bg-danger 
-                                  {{ else if eq . "Free" }}
-                                      bg-warning
-                                  {{ end }}
-                                  rounded px-2 py-1
-                              '>
-                                  {{ . }}
-                              </span>&nbsp;
-                          {{ end }}
                           {{ range .Params.killchain }}
                               {{ if eq . "recon" }}&nbsp;<span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span>{{ end }}
                               {{ if eq . "weaponization" }}&nbsp;<span class="fs-5 text-secondary bi bi-wrench" title="Weaponization"></span>{{ end }}

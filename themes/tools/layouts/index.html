@@ -4,84 +4,15 @@
     {{- partial "head.html" . -}}
 </head>
 <body>
-    {{- partial "header.html" . -}}
-    <div style="height: 50px;"></div>
-    <div class="p-2 container d-flex flex-column align-items-center">
-        <h1 class="text-secondary text-center fw-semibold" style="font-size: 3em;">{{ .Title }}</h1>
+    <section class="vh-100 p-2 container d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-secondary text-center fw-semibold" style="font-size: 4.5em;">{{ .Title }}</h1>
         <p class="text-center" style="max-width: 800px;">{{ .Description }}</p>
-        <p class="d-flex flex-column flex-md-row align-items-center "> 
-            {{ $tools := where .Site.Pages "Section" "tools" }}
-            {{ $tools = where $tools "File" "ne" nil }}
-            {{ $tools = where $tools "File.BaseFileName" "ne" "_index" }}
-            <span>{{ len $tools }} listed tools</span>
-            <span class="d-none d-md-block bi bi-dot"></span>
-            <span>Last update on {{ now.Format "2006-01-02" }}</span>
-        </p>
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
-            <a class="m-2 btn btn-secondary" href="https://github.com/casfergroup/pandora/issues/new/choose">Recommend Tools</a>
-            <a class="m-2 btn btn-outline-secondary" href="https://github.com/casfergroup/pandora">Contribute</a>
+        <div class="d-flex flex-wrap justify-content-center">
+            <a class="m-2 btn btn-secondary" style="width: 150px;" href="/tools/">Explore Tools</a>
+            <a class="m-2 btn btn-secondary" style="width: 150px;" href="/guides/">Explore Guides</a>
+            <a class="m-2 btn btn-outline-secondary" style="width: 150px;" href="https://github.com/casfergroup/pandora">Contribute</a>
         </div>
-    </div>
-
-    {{- partial "killchain.html" . -}}
-
-    {{ with .Site.GetPage "section" "tools" }}
-    {{ range sort .Sections "Title" }}
-        <div style="height: 50px;"></div>
-        <div class="p-2 container">
-            <div class="mb-4 d-flex justify-content-between">
-                <h2 class="m-0 text-secondary align-self-center">{{ .Title }}</h2>
-                <a class="btn btn-secondary fs-5 d-flex align-items-center" href="{{ .Permalink }}">Explore&nbsp;<span class="bi bi-arrow-right"></span></a>
-            </div>
-            
-            <div class="row g-4">
-                {{ range where .Pages "File.BaseFileName" "ne" "_index" }}
-                    <div class="col-12 col-md-6 col-xl-4">
-                        <div class="h-100 card bg-black">
-                            <div class="card-body">
-                                <a href="{{ .Permalink }}" class="card-title text-primary text-decoration-none d-flex align-items-center">
-                                    <h3 class="fs-4">{{ .Title }}&nbsp;<span class="bi bi-arrow-right"></span></h3>
-                                </a>
-                                
-                                <p>
-                                    {{ range .Params.license }}
-                                        <span class='
-                                            {{ if eq . "Open-source" }}
-                                                bg-success 
-                                            {{ else if eq . "Commercial" }}
-                                                bg-danger 
-                                            {{ else if eq . "Free" }}
-                                                bg-warning
-                                            {{ end }}
-                                            rounded px-2 py-1
-                                        '>
-                                            {{ . }}
-                                        </span>&nbsp;
-                                    {{ end }}
-                                    {{ range .Params.killchain }}
-                                        {{ if eq . "recon" }}&nbsp;<span class="fs-5 text-secondary bi bi-binoculars" title="Recognition"></span>{{ end }}
-                                        {{ if eq . "weaponization" }}&nbsp;<span class="fs-5 text-secondary bi bi-wrench" title="Weaponization"></span>{{ end }}
-                                        {{ if eq . "delivery" }}&nbsp;<span class="fs-5 text-secondary bi bi-box-arrow-in-right" title="Delivery"></span>{{ end }}
-                                        {{ if eq . "exploitation" }}&nbsp;<span class="fs-5 text-secondary bi bi-bug" title="Exploitation"></span>{{ end }}
-                                        {{ if eq . "installation" }}&nbsp;<span class="fs-5 text-secondary bi bi-download" title="Installation"></span>{{ end }}
-                                        {{ if eq . "c2" }}&nbsp;<span class="fs-5 text-secondary bi bi-diagram-3" title="Command & Control (C2)"></span>{{ end }}
-                                        {{ if eq . "objectives" }}&nbsp;<span class="fs-5 text-secondary bi bi-shield-x" title="Actions on Objectives"></span>{{ end }}
-                                    {{ end }}
-                                </p>
-                                <p class="">{{ .Params.description }}</p>
-                            </div>
-                        </div>
-                    </div>
-                {{ end }}
-            </div>
-        </div>
-    {{ end }}
-    {{ end }}
-
-
-
-        <div style="height: 50px;"></div>
-    
+    </section>    
 
     {{- partial "footer.html" . -}}
 </body>
