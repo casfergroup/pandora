@@ -24,3 +24,11 @@ body {
 .cust-content h4 {
   margin-top: 2\rem !important;
 }
+
+.cust-content p img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
