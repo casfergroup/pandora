@@ -216,27 +216,7 @@ Once you’re comfortable with basic filters, you can **chain multiple operators
 Use multiple filters together to refine results even further.  
 Usage:
 ```html {linenos=inline style=base16-snazzy}
-site:example.com filetype:pdf "internal memo"
-```
-Example: `site:example.com filetype:pdf "internal memo"`
-
-Notes: Combines `site:`, `filetype:`, and an exact phrase search to target specific documents inside a domain.
-
-#### Stacking `OR` Conditions
-Use parentheses to group several `OR` conditions.  
-Usage:
-```html {linenos=inline style=base16-snazzy}
-site:example.com (password OR credential OR login)
-```
-Example: `site:example.com (password OR credential OR login)`
-
-Notes: Google treats anything inside parentheses together; use this to broaden keyword variations without losing focus.
-
-#### Searching Multiple Sites at Once
-Target several domains using `OR` between `site:` operators.  
-Usage:
-```html {linenos=inline style=base16-snazzy}
-(site:example.com OR site:example.org) "private document"
+site:example.com filetype:pdf "internal memo"https://github.com/redduxi/Google-Dorks-Resources
 ```
 Example: `(site:github.com OR site:gitlab.com) "access token"`
 
@@ -599,7 +579,3 @@ intitle:"Kubernetes Dashboard"
 inurl:/api/v1/
 ```
 Notes: Exposed Kubernetes clusters = total system compromise.
-
----
-
-For a deep-dive, refer to [this GitHub](https://github.com/Just-Roma/DorkingDB?tab=readme-ov-file).
