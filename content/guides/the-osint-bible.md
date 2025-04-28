@@ -18,7 +18,7 @@ Geospatial Intelligence is, in my opinion, one of the most fascinating forms of 
 
 ![CORONA first image](https://upload.wikimedia.org/wikipedia/commons/d/d8/CORONA_first_image.jpg "1st image from CORONA")
 
-Before CORONA, the U.S. was [already](https://en.wikipedia.org/wiki/United_States_aerial_reconnaissance_of_the_Soviet_Union) conducting GEOINT, starting after World War II, but relied on stealth aircraft like the iconic [Lockheed U-2](https://pt.wikipedia.org/wiki/Lockheed_U-2). Similarly, the Soviets had their own methods of surveillance, using planes such as the [Beriev S-13](https://en.wikipedia.org/wiki/Beriev_S-13), which was their counterpart to the U-2.
+Before CORONA, the U.S. was [already](https://en.wikipedia.org/wiki/United_States_aerial_reconnaissance_of_the_Soviet_Union) conducting GEOINT, starting after World War II, but relied on stealth aircrafts like the iconic [Lockheed U-2](https://pt.wikipedia.org/wiki/Lockheed_U-2). Similarly, the Soviets had their own methods of surveillance, using planes such as the [Beriev S-13](https://en.wikipedia.org/wiki/Beriev_S-13), which was their counterpart to the U-2.
 
 Today, GEOINT has become a standard tool in geopolitics, with countries deploying a variety of resources such as military and commercial satellites, unmanned aerial vehicles (UAVs), GPS data, LIDAR-equipped planes, and more. GEOINT is also the reason why military bases appear blurred on Google Maps — it's a protective measure that shields sensitive locations from curious minds, especially for countries lacking the resources to engage in traditional GEOINT. 
 
