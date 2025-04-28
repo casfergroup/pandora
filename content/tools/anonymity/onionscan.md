@@ -6,5 +6,5 @@ links:
 license:
   - "Open-source"
 killchain:
-  - exploitation
+  - recon
 ---
