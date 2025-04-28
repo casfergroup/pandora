@@ -6,6 +6,7 @@ links:
   - https://github.com/cipher387/Dorks-collections-list/
   - https://github.com/chr3st5an/Google-Dorking/
   - https://github.com/Just-Roma/DorkingDB/
+  - https://dorksearch.com/
 killchain:
   - recon
 ---
