@@ -8,4 +8,11 @@ license:
   - "Commercial"
 killchain:
   - recon
+  - weaponization
+  - delivery
+  - exploitation
+  - installation
+  - command-and-control
+  - exfiltration
+  - impact
 ---
