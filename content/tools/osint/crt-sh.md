@@ -8,3 +8,6 @@ license:
 killchain:
   - recon
 ---
+You can list certificates for all subdomains by using the `%` wildcard.
+
+For example, `%.casfergroup.com` will show all certificates for subdomains of casfergroup.com
