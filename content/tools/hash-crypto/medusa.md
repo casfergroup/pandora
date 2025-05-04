@@ -8,5 +8,4 @@ license:
 killchain:
   - exploitation
   - installation
-topic: Hash & Cracking Hacking Tools
 ---
